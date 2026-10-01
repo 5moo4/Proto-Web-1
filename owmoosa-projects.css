@@ -394,3 +394,14 @@
 .frame .project-card, .frame .project-info, .frame .project-info strong {
   text-align: center !important;
 }
+.frame .project4-posts[hidden] { display: none !important; }
+.frame .project4-posts { flex: 0 0 auto; width: min(100%, 520px); text-align: center; }
+.storm-post-card { display: grid; grid-template-columns: 110px minmax(0,1fr); gap: 20px; align-items: center; width: 100%; padding: 18px; border: 1px solid #ffffff60; background: #08101de8; color: #fff; text-align: center; text-decoration: none; border-radius: 10px; }
+.storm-post-art { display: grid; place-items: center; min-height: 100px; background: radial-gradient(ellipse,#4d6079,#080c15 70%); font: 56px system-ui; color:#e1edff; }
+.storm-post-card small,.storm-post-card strong,.storm-post-card span span { display: block; }
+.storm-post-card small { font-size: 9px; letter-spacing: .07em; color: #c5d5ea; }
+.storm-post-card strong { font-size: 20px; margin: 10px 0; }
+.storm-post-card span span { font-size: 12px; line-height: 1.6; color: #e1e7f1; }
+.storm-post-card:hover { border-color: #fff; background: #15223be8; }
+.storm-post-card:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+@media(max-width:540px){.storm-post-card{grid-template-columns:75px minmax(0,1fr);padding:12px;gap:12px}.storm-post-card strong{font-size:17px}.storm-post-art{min-height:90px}}
