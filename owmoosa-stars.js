@@ -14,10 +14,10 @@
     const dpr = Math.min(devicePixelRatio || 1, 2);
     canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    stars = Array.from({ length: Math.min(1100, Math.max(240, Math.floor(width * height / 1100))) }, () => {
+    stars = Array.from({ length: Math.round(1.5 * Math.min(1100, Math.max(240, Math.floor(width * height / 1100)))) }, () => {
       const x = Math.random() * width, y = Math.random() * height;
       const prominent = Math.random() < .14;
-      return { x, y, homeX: x, homeY: y, vx: 0, vy: 0, depth: prominent ? .8 + Math.random() * .4 : .15 + Math.random() * .6, size: prominent ? 1.8 + Math.random() * 1.8 : .6 + Math.random() * 1.3, phase: Math.random() * Math.PI * 2, brightness: .45 + Math.random() * .55, prominent };
+      return { x, y, homeX: x, homeY: y, vx: 0, vy: 0, depth: prominent ? .8 + Math.random() * .4 : .15 + Math.random() * .6, size: prominent ? 1.8 + Math.random() * 1.8 : .6 + Math.random() * 1.3, phase: Math.random() * Math.PI * 2, minBrightness: .04 + Math.random() * .28, maxBrightness: .4 + Math.random() * .6, twinkleRate: .0006 + Math.random() * .0034, twinklePower: .7 + Math.random() * 2.3, orientation: Math.random() * Math.PI, aspect: .55 + Math.random() * .9, shape: Math.floor(Math.random() * 7), prominent };
     });
     floaters = Array.from({ length: width < 700 ? 4 : 6 }, (_, i) => makeFloater(true, i % 3));
     meteors = []; nextMeteor = 0;
@@ -119,31 +119,77 @@
       const speed = 220 + Math.random() * 1000;
       const angle = Math.random() * Math.PI * 2;
       const ux = Math.cos(angle), uy = Math.sin(angle);
+      const approaching = Math.random() < .28;
       meteors.push({ x: Math.random() * width, y: Math.random() * height,
         vx: ux * speed, vy: uy * speed, ux, uy, age: 0,
         life: 1.3 + Math.random() * 1.5, fadeOut: .65 + Math.random() * .45,
         length: 40 + Math.random() * 220,
         brightness: .25 + Math.random() * .75, size: .65 + Math.random() * 2.1,
-        glow: 3 + Math.random() * 12 });
-      nextMeteor = time + 2800 + Math.random() * 4200;
+        glow: 3 + Math.random() * 12,
+        approaching,
+        offsetX: ux * (18 + Math.random() * 65),
+        offsetY: uy * (18 + Math.random() * 65),
+        originX: width * (.25 + Math.random() * .5),
+        originY: height * (.2 + Math.random() * .6),
+        depthStart: approaching ? 3 + Math.random() * 2 : .65 + Math.random() * 1.4,
+        depthEnd: approaching ? .18 + Math.random() * .2 : .65 + Math.random() * 1.4,
+        tailStart: .45 + Math.random() * .8,
+        tailEnd: .45 + Math.random() * 1.4,
+        phase: Math.random() * Math.PI * 2,
+        pulseRate: 4 + Math.random() * 7,
+        headRate: 5 + Math.random() * 9,
+        tailRate: 3 + Math.random() * 10,
+        hue: [32, 48, 185, 210, 265, 350][Math.floor(Math.random() * 6)] + Math.random() * 14,
+        curve: (Math.random() - .5) * .18 });
+      nextMeteor = time + 700 + Math.random() * 1050;
     }
     meteors = meteors.filter(m => m.age < m.life && m.x > -300 && m.x < width + 300 && m.y > -300 && m.y < height + 300);
     for (const m of meteors) {
-      m.age += delta; m.x += m.vx * delta; m.y += m.vy * delta;
+      m.age += delta;
+      const progress = Math.min(1, m.age / m.life);
+      const eased = progress * progress * (3 - 2 * progress);
+      const depth = m.depthStart + (m.depthEnd - m.depthStart) * eased;
+      const scale = 1 / depth;
+      const turn = m.curve * eased;
+      const ux = m.ux * Math.cos(turn) - m.uy * Math.sin(turn);
+      const uy = m.ux * Math.sin(turn) + m.uy * Math.cos(turn);
+      const speed = Math.hypot(m.vx, m.vy) * scale;
+      if (m.approaching) {
+        // Project a fixed world-space offset as depth shrinks toward the viewer.
+        m.x = m.originX + m.offsetX * scale;
+        m.y = m.originY + m.offsetY * scale;
+      } else {
+        m.x += ux * speed * delta; m.y += uy * speed * delta;
+      }
+      const pulse = Math.max(.2, 1 + .45 * Math.sin(m.age * m.pulseRate + m.phase) + .25 * Math.sin(m.age * m.pulseRate * 1.73 + m.phase * 2));
+      const headPulse = Math.max(.25, 1 + .5 * Math.sin(m.age * m.headRate + m.phase) + .25 * Math.sin(m.age * m.headRate * 1.41));
+      const tailPulse = Math.max(.18, 1 + .6 * Math.sin(m.age * m.tailRate + m.phase * 2) + .25 * Math.sin(m.age * m.tailRate * 1.67));
+      const size = Math.max(.3, Math.min(m.approaching ? 18 : 8, m.size * scale * headPulse));
+      const tailScale = m.tailStart + (m.tailEnd - m.tailStart) * eased;
+      const length = Math.min(520, m.length * scale * tailScale * tailPulse);
       const fadeIn = Math.min(1, m.age / .18);
       const remaining = Math.max(0, Math.min(1, (m.life - m.age) / m.fadeOut));
       const fadeOut = remaining * remaining * (3 - 2 * remaining);
-      const alpha = m.brightness * fadeIn * fadeOut;
-      const tx = m.x - m.length * m.ux, ty = m.y - m.length * m.uy;
+      const alpha = Math.min(1, m.brightness * Math.sqrt(scale) * pulse) * fadeIn * fadeOut;
+      const tx = m.x - length * ux, ty = m.y - length * uy;
       const trail = ctx.createLinearGradient(tx, ty, m.x, m.y);
-      trail.addColorStop(0, 'rgba(210,213,219,0)');
-      trail.addColorStop(.75, `rgba(220,223,229,${alpha * .5})`);
-      trail.addColorStop(1, `rgba(243,249,255,${alpha})`);
-      ctx.save(); ctx.strokeStyle = trail; ctx.lineWidth = m.size;
-      ctx.shadowColor = '#e2e5ec'; ctx.shadowBlur = m.glow;
-      ctx.beginPath(); ctx.moveTo(tx, ty); ctx.lineTo(m.x, m.y); ctx.stroke();
-      ctx.fillStyle = `rgba(255,255,255,${alpha})`;
-      ctx.beginPath(); ctx.arc(m.x, m.y, m.size, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+      trail.addColorStop(0, `hsla(${m.hue},75%,65%,0)`);
+      trail.addColorStop(.5, `hsla(${m.hue},80%,70%,${alpha * .3})`);
+      trail.addColorStop(.85, `hsla(${m.hue},85%,80%,${alpha * .7})`);
+      trail.addColorStop(1, `hsla(${m.hue},80%,93%,${alpha})`);
+      ctx.save(); ctx.fillStyle = trail;
+      ctx.shadowColor = `hsla(${m.hue},85%,75%,${alpha})`; ctx.shadowBlur = Math.min(45, m.glow * scale * pulse);
+      // Taper the wake toward its distant end instead of drawing a uniform line.
+      ctx.beginPath(); ctx.moveTo(tx, ty);
+      ctx.lineTo(m.x - uy * size * .7, m.y + ux * size * .7);
+      ctx.lineTo(m.x + uy * size * .7, m.y - ux * size * .7);
+      ctx.closePath(); ctx.fill();
+      const halo = ctx.createRadialGradient(m.x, m.y, 0, m.x, m.y, size * 4);
+      halo.addColorStop(0, `hsla(${m.hue},85%,85%,${alpha * .65})`);
+      halo.addColorStop(1, `hsla(${m.hue},85%,65%,0)`);
+      ctx.fillStyle = halo; ctx.fillRect(m.x - size * 4, m.y - size * 4, size * 8, size * 8);
+      ctx.fillStyle = `hsla(${m.hue},45%,96%,${alpha})`;
+      ctx.beginPath(); ctx.arc(m.x, m.y, size, 0, Math.PI * 2); ctx.fill(); ctx.restore();
     }
   }
   function draw(time) {
@@ -185,8 +231,8 @@
           star.vx *= damping; star.vy *= damping;
           star.x += star.vx * step; star.y += star.vy * step;
         }
-        const shimmer = motion.matches ? 1 : .55 + .45 * Math.pow(.5 + .5 * Math.sin(time * .0022 + star.phase), 2);
-        const alpha = star.brightness * shimmer;
+        const shimmer = motion.matches ? .7 : Math.pow(.5 + .5 * Math.sin(time * star.twinkleRate + star.phase), star.twinklePower);
+        const alpha = star.minBrightness + (star.maxBrightness - star.minBrightness) * shimmer;
         if (star.prominent) {
           const glow = ctx.createRadialGradient(star.x, star.y, 0, star.x, star.y, star.size * 7);
           glow.addColorStop(0, `rgba(237,239,244,${alpha * .55})`);
@@ -195,11 +241,33 @@
           ctx.fillStyle = glow; ctx.fillRect(star.x - star.size * 7, star.y - star.size * 7, star.size * 14, star.size * 14);
           ctx.strokeStyle = `rgba(239,241,245,${alpha * .6})`; ctx.lineWidth = .7;
           const ray = star.size * (2 + shimmer * 2);
-          ctx.beginPath(); ctx.moveTo(star.x - ray, star.y); ctx.lineTo(star.x + ray, star.y);
-          ctx.moveTo(star.x, star.y - ray); ctx.lineTo(star.x, star.y + ray); ctx.stroke();
+          if (star.shape !== 0) {
+            ctx.beginPath();
+            const angle = star.orientation;
+            const axes = star.shape === 3 ? 3 : star.shape === 6 ? 4 : star.shape === 5 ? 1 : 2;
+            for (let j = 0; j < axes; j++) {
+              const a = angle + j * Math.PI / axes;
+              const reach = ray * (star.shape === 5 ? 1.45 : j % 2 === 0 ? 1 : star.aspect);
+              ctx.moveTo(star.x - Math.cos(a) * reach, star.y - Math.sin(a) * reach);
+              ctx.lineTo(star.x + Math.cos(a) * reach, star.y + Math.sin(a) * reach);
+            }
+            ctx.stroke();
+          }
         }
         ctx.fillStyle = `rgba(243,244,247,${alpha})`;
-        ctx.beginPath(); ctx.arc(star.x, star.y, star.size * (star.prominent ? .62 : 1), 0, Math.PI * 2); ctx.fill();
+        const core = star.size * (star.prominent ? .62 : 1);
+        ctx.beginPath();
+        if (star.shape === 2) {
+          ctx.moveTo(star.x, star.y - core * 1.4);
+          ctx.lineTo(star.x + core, star.y);
+          ctx.lineTo(star.x, star.y + core * 1.4);
+          ctx.lineTo(star.x - core, star.y); ctx.closePath();
+        } else if (star.shape === 4 || star.shape === 5) {
+          ctx.ellipse(star.x, star.y, core * 1.2, core * .65, star.orientation, 0, Math.PI * 2);
+        } else {
+          ctx.arc(star.x, star.y, core, 0, Math.PI * 2);
+        }
+        ctx.fill();
       }
       drawFloaters(time, delta);
       drawMeteors(time, delta);
