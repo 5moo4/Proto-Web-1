@@ -1,0 +1,332 @@
+.inside{position:absolute;inset:0;z-index:4}
+.inside-copy{top:clamp(68px,10vh,112px)!important;left:clamp(28px,10vw,150px)!important;max-width:500px!important}
+.inside-copy h2{font-size:clamp(42px,5.1vw,64px)!important;line-height:1.03!important;margin:10px 0!important}
+.inside-copy p{font-size:13px!important;line-height:1.65!important}
+.project-shelf{position:absolute;top:48%;left:clamp(28px,10vw,150px);width:min(690px,78vw);z-index:5}
+.shelf-heading{margin:0 0 12px;color:#d7c69f;font:9px 'DM Mono',monospace;letter-spacing:.2em}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.project-card{display:grid;grid-template-columns:112px minmax(0,1fr);align-items:center;gap:15px;min-height:132px;padding:12px;border:1px solid #e5d0a33b;background:linear-gradient(120deg,#171610d9,#15140f99);color:#f1e9d9;text-decoration:none;backdrop-filter:blur(8px);transition:transform .25s,border-color .25s,background .25s}
+.project-card:hover{transform:translateY(-4px);border-color:#d8bd82a8;background:#242117d9}
+.project-art{position:relative;display:grid;place-items:center;height:104px;overflow:hidden;background:#ecede7;color:#182018}
+.calendar-art{padding:11px;background:#f3f0e4;display:flex;flex-direction:column;justify-content:space-between;align-items:stretch}
+.calendar-art strong{font:700 9px 'DM Mono',monospace;letter-spacing:.04em}.calendar-art small{font:7px 'DM Mono',monospace;color:#697166}
+.mini-days{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}.mini-days i{height:6px;background:#d9d8cf}.mini-days i:nth-child(7n+2),.mini-days i:nth-child(7n+5){background:#e9a39c}.mini-days i:nth-child(4n){background:#8ea7db}
+.quiz-art{background:radial-gradient(circle at 50% 45%,#33445a,#121923 75%);color:#eef3f6}
+.quiz-art:before,.quiz-art:after{content:"あ";position:absolute;color:#99d8c8;font:42px 'Gowun Batang',serif;opacity:.36;transform:translate(-27px,-8px) rotate(-11deg)}.quiz-art:after{content:"ア";color:#e5c681;font-size:34px;transform:translate(29px,16px) rotate(9deg)}
+.quiz-art b{position:relative;z-index:1;font:500 23px 'DM Mono',monospace;text-shadow:0 0 18px #c5f1e9a3}
+.project-info small{display:block;margin-bottom:7px;color:#d8bd82;font:8px 'DM Mono',monospace;letter-spacing:.13em}.project-info strong{display:block;font-size:15px;font-weight:400;line-height:1.4}.project-info span{display:block;margin-top:7px;color:#c9c0af;font-size:10px;line-height:1.55}.project-info b{color:#e1c787;font:14px 'DM Mono',monospace;font-weight:400;margin-left:5px}
+.is-inside .back{position:fixed!important;z-index:100!important;left:clamp(20px,5vw,76px)!important;bottom:max(20px,env(safe-area-inset-bottom))!important;min-height:44px;padding:11px 16px!important;border:1px solid #d8bd8290!important;background:#11100ee8!important;color:#f1e9d9!important;backdrop-filter:blur(8px);display:flex!important;align-items:center;text-decoration:none}
+.owmoosa-home{position:fixed;z-index:9999;top:max(14px,env(safe-area-inset-top));right:16px;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:0 15px;border:1px solid #d7c18c88;border-radius:999px;background:#151510e8;color:#fff9ed;text-decoration:none;font:600 12px/1.1 system-ui,sans-serif;box-shadow:0 5px 22px #0003;backdrop-filter:blur(10px);transition:background .2s,border-color .2s,transform .2s}
+.owmoosa-home:hover{background:#3a3020;border-color:#d8bd82;transform:translateY(-1px)}.owmoosa-home span{color:#dec58b;font-size:16px}
+@media(max-height:680px){.inside-copy{top:60px!important}.inside-copy h2{font-size:clamp(38px,4.6vw,52px)!important;margin:7px 0!important}.inside-copy p{font-size:11px!important}.project-shelf{top:45%}.project-card{min-height:116px;padding:9px;grid-template-columns:92px minmax(0,1fr);gap:11px}.project-art{height:92px}}
+@media(max-width:700px){.inside-copy{top:60px!important;left:7%!important;max-width:86vw!important}.inside-copy h2{font-size:clamp(40px,9vw,56px)!important}.inside-copy p{font-size:11px!important}.project-shelf{top:43%;left:7%;width:86%}.shelf-heading{margin-bottom:8px;font-size:8px}.project-grid{gap:9px}.project-card{display:flex;flex-direction:column;align-items:stretch;gap:8px;min-height:0;padding:8px}.project-art{width:100%;height:clamp(72px,17vh,112px)}.project-info small{font-size:7px;margin-bottom:4px}.project-info strong{font-size:12px}.project-info span{font-size:9px;margin-top:4px}.project-info b{display:none}.owmoosa-home{top:max(10px,env(safe-area-inset-top));right:10px;min-height:42px;padding:0 12px;font-size:11px}}
+@media(max-width:700px) and (max-height:620px){.inside-copy{top:52px!important}.inside-copy h2{font-size:38px!important;margin:5px 0!important}.inside-copy p{font-size:10px!important;line-height:1.45!important}.project-shelf{top:41%}.project-card{padding:6px}.project-art{height:72px}.project-info span{display:none}.is-inside .back{left:7%!important;bottom:max(12px,env(safe-area-inset-bottom))!important}}
+.owmoosa-calendar .page{padding-top:82px!important}
+.owmoosa-quiz .app-shell{padding-top:max(68px,calc(env(safe-area-inset-top) + 56px))!important}
+.owmoosa-quiz .screen{min-height:calc(100dvh - max(68px,calc(env(safe-area-inset-top) + 56px)) - max(24px,env(safe-area-inset-bottom)))!important}
+@media(max-width:700px){.owmoosa-calendar .page{padding-top:72px!important}}
+/* Centered composition and safe scrolling across viewport sizes. */
+.room{background-image:radial-gradient(ellipse at 50% 45%,#0b0b0938,#090a09a4 78%),linear-gradient(0deg,#0c0b09a8,transparent 30%,#0a0a092d 100%),url('./owmoosa-night-studio.png')!important;background-position:center 54%!important}
+.copy{left:50%!important;top:48%!important;width:min(700px,90vw)!important;max-width:700px!important;transform:translate3d(calc(-50% + var(--x)*-2px),calc(-50% + var(--y)*-2px),0)!important;text-align:center!important}
+.copy h1{font-size:clamp(44px,6.8vw,86px)!important;line-height:1.06!important;margin:17px 0!important}
+.copy p{margin:0 auto 20px!important;max-width:540px;text-align:center!important;font-size:clamp(12px,1.1vw,14px)!important}
+.actions{justify-content:center!important;flex-wrap:wrap;gap:14px!important;margin-top:22px!important}
+.inside{position:absolute!important;inset:0!important;display:none;overflow-y:auto!important;overscroll-behavior:contain;padding:clamp(64px,9vh,96px) 20px 112px!important;text-align:center!important;scrollbar-width:thin;scrollbar-color:#b89b634d transparent}
+.is-inside .inside{display:block!important}
+.inside-copy{position:relative!important;inset:auto!important;top:auto!important;left:auto!important;transform:none!important;max-width:min(680px,92vw)!important;margin:0 auto 22px!important;text-align:center!important}
+.inside-copy h2{font-size:clamp(40px,5.2vw,64px)!important;line-height:1.08!important;margin:12px auto!important}
+.inside-copy p{margin:0 auto!important;max-width:500px;font-size:clamp(12px,1vw,14px)!important;line-height:1.7!important}
+.project-shelf{position:relative!important;top:auto!important;left:auto!important;width:min(760px,92vw)!important;margin:12px auto 0!important;text-align:center!important}
+.shelf-heading{text-align:center!important;margin-bottom:12px!important}
+.project-grid{justify-items:center!important;gap:14px!important}
+.project-card{width:100%;grid-template-columns:120px minmax(0,1fr)!important;text-align:center!important;justify-items:center!important}
+.project-art{width:100%!important;max-width:150px}
+.project-info{width:100%;text-align:center!important}
+.is-inside .back{left:50%!important;right:auto!important;bottom:max(16px,env(safe-area-inset-bottom))!important;transform:translateX(-50%)!important;white-space:nowrap}
+.owmoosa-home{left:50%!important;right:auto!important;transform:translateX(-50%)!important}
+.owmoosa-home:hover{transform:translate(-50%,-1px)!important}
+.owmoosa-calendar .page{padding-top:82px!important}.owmoosa-quiz .app-shell{padding-top:max(68px,calc(env(safe-area-inset-top) + 56px))!important}
+@media(max-height:680px){.copy{top:47%!important}.inside{padding-top:58px!important;padding-bottom:100px!important}.inside-copy{margin-bottom:14px!important}.inside-copy h2{font-size:clamp(38px,4.8vw,52px)!important;margin:8px auto!important}.project-shelf{margin-top:8px!important}.project-card{min-height:112px!important}}
+@media(max-width:700px){.copy{top:47%!important;width:min(90vw,560px)!important}.copy h1{font-size:clamp(42px,9vw,64px)!important;margin:15px auto!important}.copy p{font-size:12px!important}.actions{margin-top:18px!important}.inside{padding:66px 16px 96px!important}.inside-copy{max-width:90vw!important;margin-bottom:18px!important}.inside-copy h2{font-size:clamp(38px,8vw,54px)!important}.project-shelf{width:92vw!important}.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}.project-card{display:flex!important;flex-direction:column!important;align-items:center!important;gap:8px!important;min-height:0!important;padding:9px!important}.project-art{height:clamp(72px,14vh,108px)!important}.project-info{width:100%!important}.project-info strong{font-size:12px!important}.project-info span{font-size:9px!important;line-height:1.45}.is-inside .back{bottom:max(14px,env(safe-area-inset-bottom))!important}.owmoosa-home{top:max(10px,env(safe-area-inset-top))!important}.owmoosa-calendar .page{padding-top:72px!important}}
+@media(max-width:700px) and (max-height:620px){.copy{top:45%!important}.copy h1{font-size:clamp(38px,8vw,52px)!important;margin:10px auto!important}.copy p{font-size:11px!important;line-height:1.5!important}.actions{margin-top:12px!important}.inside{padding-top:56px!important}.inside-copy{margin-bottom:12px!important}.inside-copy h2{font-size:38px!important;margin:6px auto!important}.inside-copy p{font-size:10px!important}.project-shelf{margin-top:5px!important}.project-card{padding:6px!important}.project-art{height:66px!important}.project-info span{display:none}}
+.brand{left:50%!important;right:auto!important;top:24px!important;transform:translateX(-50%)!important;text-align:center!important}.note{left:50%!important;right:auto!important;top:50px!important;transform:translateX(-50%)!important;text-align:center!important;white-space:nowrap}.footer,.step{display:none!important}
+@media(max-width:700px){.brand{top:17px!important}.note{top:40px!important;font-size:7px!important}}
+
+/* Room content lives outside the animated background. Keep both children in flow. */
+.frame .copy h1, .frame .copy h1 em,
+.frame .inside-copy h2, .frame .brand,
+.frame .enter, .frame .enter b,
+.frame .project-info strong, .frame .project-info b,
+.frame #back, .owmoosa-home, .owmoosa-home span {
+  color: #fff !important;
+  text-shadow: 0 2px 12px #000;
+}
+.frame .copy p, .frame .inside-copy p,
+.frame .eyebrow, .frame .note, .frame .brand span,
+.frame .project-info small, .frame .project-info span,
+.frame .shelf-heading {
+  color: #eef2fa !important;
+  text-shadow: 0 2px 10px #000;
+}
+.frame .enter {
+  background: #0d111ddd !important;
+  border-color: #d3deefb3 !important;
+  font-weight: 700;
+}
+.frame .enter:hover { background: #242e45ee !important; border-color: #fff !important; }
+.frame .enter:focus-visible, .frame .project-card:focus-visible,
+.frame #back:focus-visible, .owmoosa-home:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+.frame:not(.is-inside) > .room {
+  background-image: radial-gradient(ellipse at 50% 45%, #05081870, #05081812 80%), url('./owmoosa-galaxy.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+#galaxy-stars { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+.frame > .room { z-index: 1; }
+.frame:not(.is-inside) .copy, .frame:not(.is-inside) .brand, .frame:not(.is-inside) .note { z-index: 4; }
+.frame:not(.is-inside) > .room { transform: none !important; }
+.frame:not(.is-inside) > .room {
+  animation: none;
+}
+@keyframes galaxy-drift {
+  from { transform: scale(1.01) translate(-.3%, .2%); }
+  to { transform: scale(1.04) translate(.3%, -.2%); }
+}
+.frame:not(.is-inside) > .room {
+  background-image: none !important;
+  background-color: #000 !important;
+  filter: none;
+}
+.frame:not(.is-inside) > .room::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url('./owmoosa-dark-nebula.png') center / cover no-repeat;
+  filter: none;
+  box-shadow: none;
+  animation: galaxy-drift 38s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .frame:not(.is-inside) > .room::before { animation: none; }
+}
+.frame:not(.is-inside) .copy { transform: translate(-50%, -50%) !important; }
+.frame.is-inside #galaxy-stars { visibility: hidden; }
+.frame.is-inside[data-space="brainstorm"] > .room {
+  background-image: linear-gradient(0deg, #06091970, #06091918 55%, #0609195c), url('./owmoosa-brainstorm-universe.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.frame.is-inside[data-space="brainstorm"] .inside-copy .eyebrow {
+  color: #b9c7ff;
+}
+.frame.is-inside[data-space="brainstorm"] .inside-copy h2 {
+  color: #f0efff;
+  text-shadow: 0 2px 24px #080b25;
+}
+.entry-choices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px auto 0;
+}
+.entry-choices .enter {
+  min-height: 48px;
+  min-width: 156px;
+}
+.frame .inside > .project-shelf[hidden] { display: none !important; }
+@media (max-width: 540px) {
+  .entry-choices { gap: 8px; margin-top: 18px; }
+  .entry-choices .enter { min-width: 0; padding: 12px 10px; font-size: 11px; }
+  .entry-choices .enter b { margin-left: 8px; }
+}
+.frame.is-inside > .inside {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(24px, 4vh, 40px);
+  padding: max(90px, 12vh) 20px 110px !important;
+  overflow-y: auto !important;
+  transform: none !important;
+  animation: none !important;
+  z-index: 20;
+}
+.frame.is-inside > .inside > .inside-copy,
+.frame.is-inside > .inside > .project-shelf {
+  position: static !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  flex: 0 0 auto;
+  min-width: 0;
+  margin: 0 !important;
+  text-align: center !important;
+}
+.frame.is-inside > .inside > .inside-copy {
+  width: min(100%, 680px) !important;
+  max-width: 100% !important;
+}
+.frame.is-inside > .inside > .project-shelf {
+  width: min(100%, 760px) !important;
+}
+.frame.is-inside > .inside .project-card:hover {
+  transform: none;
+  border-color: #d8bd82a8;
+}
+.frame.is-inside > #back:not([hidden]) {
+  position: fixed !important;
+  left: 50% !important;
+  bottom: max(16px, env(safe-area-inset-bottom)) !important;
+  transform: translateX(-50%) !important;
+  z-index: 100 !important;
+}
+@media (max-width: 700px) {
+  .frame.is-inside > .inside {
+    padding: 76px 18px 100px !important;
+    gap: 24px;
+  }
+  .frame.is-inside > .inside > .project-shelf {
+    width: 100% !important;
+  }
+}
+/* Keep the landing signature comfortably above the bottom edge. */
+.frame:not(.is-inside) .brand {
+  top: auto !important;
+  bottom: max(48px, calc(env(safe-area-inset-bottom) + 40px)) !important;
+}
+.frame:not(.is-inside) .note {
+  top: auto !important;
+  bottom: max(25px, calc(env(safe-area-inset-bottom) + 17px)) !important;
+}
+@media (max-height: 500px) {
+  .frame:not(.is-inside) .brand { bottom: max(32px, calc(env(safe-area-inset-bottom) + 26px)) !important; }
+  .frame:not(.is-inside) .note { bottom: max(12px, calc(env(safe-area-inset-bottom) + 6px)) !important; }
+}
+/* Image gallery: the same nebula, viewed from a spacecraft museum. */
+.frame.is-inside[data-space="images"] > .room {
+  inset: 0;
+  background-image: url('./owmoosa-space-gallery.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  filter: none;
+  transform: translate3d(calc(var(--x) * -3px), calc(var(--y) * -2px), 0) scale(1.02);
+}
+.frame.is-inside[data-space="images"] > .room::before {
+  background: none;
+  box-shadow: none;
+  filter: none;
+}
+.frame.is-inside[data-space="images"] .inside-copy h2 {
+  text-shadow: 0 2px 16px #000, 0 0 32px #0008;
+}
+@media (prefers-reduced-motion: reduce) {
+  .frame.is-inside[data-space="images"] > .room { transform: none; transition: none; }
+}
+/* Project gallery continues the spacecraft into its command cockpit. */
+.frame.is-inside[data-space="projects"] > .room {
+  inset: 0;
+  background-image: url('./owmoosa-project-cockpit.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  filter: none;
+  transform: translate3d(calc(var(--x) * -3px), calc(var(--y) * -2px), 0) scale(1.02);
+}
+.frame.is-inside[data-space="projects"] > .room::before {
+  background: none;
+  box-shadow: none;
+  filter: none;
+}
+.frame.is-inside[data-space="projects"] .project-card {
+  background: linear-gradient(135deg, #10171eee, #111419e8);
+  border-color: #d5bb8880;
+  box-shadow: 0 8px 28px #0005;
+}
+.frame.is-inside[data-space="projects"] .project-card:hover {
+  background: #20252eef;
+  border-color: #ffe0a4;
+}
+@media (prefers-reduced-motion: reduce) {
+  .frame.is-inside[data-space="projects"] > .room { transform: none; transition: none; }
+}
+/* Brainstorming continues into the spacecraft holographic conference room. */
+.frame.is-inside[data-space="brainstorm"] > .room {
+  inset: 0;
+  background-image: url('./owmoosa-hologram-conference.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  filter: none;
+  transform: translate3d(calc(var(--x) * -3px), calc(var(--y) * -2px), 0) scale(1.02);
+}
+.frame.is-inside[data-space="brainstorm"] > .room::before {
+  background: none;
+  box-shadow: none;
+  filter: none;
+}
+.frame.is-inside[data-space="brainstorm"] .inside-copy h2 {
+  text-shadow: 0 2px 16px #000, 0 0 32px #0008;
+}
+@media (prefers-reduced-motion: reduce) {
+  .frame.is-inside[data-space="brainstorm"] > .room { transform: none; transition: none; }
+}
+/* Additional project destinations. */
+.frame.is-inside[data-space="project4"] > .room { --project-background: url('./owmoosa-crew-cabin.png'); }
+.frame.is-inside[data-space="project5"] > .room { --project-background: url('./owmoosa-private-medical-room.png'); }
+.frame.is-inside[data-space="project6"] > .room { --project-background: url('./owmoosa-gravity-engine-room.png'); }
+.frame.is-inside:is([data-space="project4"], [data-space="project5"], [data-space="project6"]) > .room {
+  inset: 0;
+  background-image: var(--project-background) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  filter: none;
+  transform: translate3d(calc(var(--x) * -3px), calc(var(--y) * -2px), 0) scale(1.02);
+}
+.frame.is-inside:is([data-space="project4"], [data-space="project5"], [data-space="project6"]) > .room::before {
+  background: none;
+  box-shadow: none;
+}
+.entry-choices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, 570px);
+}
+.entry-choices .enter { min-width: 0; }
+@media (max-width: 540px) {
+  .entry-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-height: 600px) {
+  .frame:not(.is-inside) .copy h1 { font-size: clamp(30px, 6vh, 48px) !important; margin: 8px 0 !important; }
+  .frame:not(.is-inside) .copy p { margin-bottom: 8px !important; }
+  .entry-choices { margin-top: 12px; gap: 8px; }
+  .entry-choices .enter { min-height: 40px; padding: 8px 10px; }
+}
+@media (max-height: 430px) {
+  .frame:not(.is-inside) .copy { top: 12px !important; bottom: 72px; transform: translateX(-50%) !important; overflow-y: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .frame.is-inside:is([data-space="project4"], [data-space="project5"], [data-space="project6"]) > .room { transform: none; transition: none; }
+}
+/* Shared footer signature on every room landing page. */
+.frame.is-inside .brand {
+  top: auto !important;
+  bottom: max(48px, calc(env(safe-area-inset-bottom) + 40px)) !important;
+}
+.frame.is-inside .note {
+  top: auto !important;
+  bottom: max(25px, calc(env(safe-area-inset-bottom) + 17px)) !important;
+}
+.frame.is-inside > #back:not([hidden]) {
+  bottom: max(85px, calc(env(safe-area-inset-bottom) + 77px)) !important;
+}
+.frame.is-inside > .inside {
+  padding-bottom: max(160px, calc(env(safe-area-inset-bottom) + 152px)) !important;
+}
