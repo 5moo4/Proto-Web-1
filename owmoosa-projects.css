@@ -330,3 +330,67 @@
 .frame.is-inside > .inside {
   padding-bottom: max(160px, calc(env(safe-area-inset-bottom) + 152px)) !important;
 }
+/* Contemporary spacecraft typography with legible Korean fallbacks. */
+.frame { font-family: 'Space Grotesk', 'Noto Sans KR', system-ui, sans-serif; }
+.frame .copy h1, .frame .copy h1 em, .frame .inside-copy h2 {
+  font-family: 'Space Grotesk', 'Noto Sans KR', system-ui, sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500;
+  letter-spacing: -.035em;
+  line-height: 1.18 !important;
+}
+.frame .copy p, .frame .inside-copy p, .frame .enter, .frame .project-info {
+  font-family: 'Space Grotesk', 'Noto Sans KR', system-ui, sans-serif !important;
+  font-style: normal;
+}
+.frame .brand { font-family: 'Orbitron', 'Noto Sans KR', sans-serif !important; letter-spacing: .16em; }
+.frame .note, .frame .eyebrow, .frame .shelf-heading, .frame #back {
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif !important;
+}
+/* Signature belongs to the viewport frame, outside the scaled background. */
+.frame#frame > .brand {
+  top: auto !important;
+  bottom: max(78px, calc(env(safe-area-inset-bottom) + 62px)) !important;
+  z-index: 30;
+}
+.frame#frame > .note {
+  top: auto !important;
+  bottom: max(52px, calc(env(safe-area-inset-bottom) + 36px)) !important;
+  z-index: 30;
+}
+.frame.is-inside > #back:not([hidden]) {
+  bottom: max(120px, calc(env(safe-area-inset-bottom) + 104px)) !important;
+}
+.frame.is-inside > .inside { padding-bottom: 190px !important; }
+@media (max-height: 600px) {
+  .frame:not(.is-inside) .copy { top: 40% !important; }
+}
+@media (max-height: 430px) {
+  .frame:not(.is-inside) .copy { top: 12px !important; bottom: 125px; }
+}
+/* Extend the signature's Orbitron style across all spacecraft pages. */
+.frame,
+.frame .copy h1, .frame .copy h1 em,
+.frame .inside-copy h2,
+.frame .copy p, .frame .inside-copy p,
+.frame .enter, .frame .enter b,
+.frame .brand, .frame .note, .frame .eyebrow,
+.frame .shelf-heading, .frame #back,
+.frame .project-info, .frame .project-info small,
+.frame .project-info strong, .frame .project-info span, .frame .project-info b {
+  font-family: 'Orbitron', 'Noto Sans KR', system-ui, sans-serif !important;
+}
+.frame .note, .frame .eyebrow, .frame .shelf-heading { letter-spacing: .1em; }
+.frame .project-info small { font-size: 8px; letter-spacing: .06em; }
+.frame .enter { letter-spacing: .02em; }
+.frame .copy p, .frame .inside-copy p, .frame .project-info span { line-height: 1.8 !important; }
+/* Center navigation labels without directional marks. */
+.frame .entry-choices .enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.frame .project-card, .frame .project-info, .frame .project-info strong {
+  text-align: center !important;
+}
