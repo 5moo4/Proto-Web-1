@@ -22,7 +22,7 @@
     .event.lime{border:2px solid #1d4ed8}.event.pink{border:2px solid #06b6d4}.event.museum{border:2px solid #1e3a8a}.event.history{border:2px solid #16a34a}.event.war{border:2px solid #7c3aed}
     .event.blue,.event.orange,.event.purple,.event.magok,.event.lime,.event.pink,.event.museum,.event.history,.event.war,.event.mmca,.event.mmcaD{background:#f5f5f1;border:0}
     .venue-legend{display:none}
-    .event.blue{background:#ef4444}.event.orange{background:#f97316}.event.purple{background:#c2410c}.event.magok{background:#fb923c}
+    .event.blue{background:#ef4444;color:#111827}.event.orange{background:#f97316}.event.purple{background:#c2410c;color:#fff}.event.magok{background:#fb923c}
     .event.lime{background:#111827;color:#fff}.event.pink{background:#374151;color:#fff}.event.museum{background:#000;color:#fff}.event.history{background:#d1d5db}.event.war{background:#6b7280;color:#fff}.event.mmca{background:#1e3a8a;color:#fff}.event.mmcaD{background:#93c5fd;color:#0f172a}.event.sema{background:#38bdf8;color:#0f172a}
     .event.festival{background:#15803d;color:#fff}.event.at{background:#eab308;color:#1c1917}.event.ddp{background:#be123c;color:#fff}.event.sejong{background:#2563eb;color:#fff}
     .venue-legend{display:flex}.venue-legend .blue{background:#ef4444}.venue-legend .orange{background:#f97316}.venue-legend .purple{background:#c2410c}.venue-legend .magok{background:#fb923c}.venue-legend .at{background:#eab308}.venue-legend .ddp{background:#be123c}.venue-legend .sejong{background:#2563eb}.venue-legend .museum{background:#000}.venue-legend .folk{background:#374151}.venue-legend .history{background:#d1d5db}.venue-legend .war{background:#6b7280}.venue-legend .mmca{background:#1e3a8a}.venue-legend .mmcaD{background:#93c5fd}.venue-legend .sema{background:#38bdf8}.venue-legend .festival{background:#15803d}
@@ -74,7 +74,7 @@
       ['2026-10-01','2026-10-02','2026 동아재테크쇼'],
       ['2026-10-06','2026-10-08','스마트라이프위크(SLW)'],
       ['2026-10-06','2026-10-08','인공지능 페스타 2026'],
-      ['2026-10-07','2026-10-10','비어페스트 코엑스 2026'],
+      ['2026-10-07','2026-10-11','비어페스트 코엑스 2026'],
       ['2026-10-10','2026-10-10','한일축제한마당 2026 in Seoul'],
       ['2026-10-10','2026-10-11','2026 세계유학박람회'],
       ['2026-10-13','2026-10-16','KES 2026(한국전자전)'],
@@ -192,7 +192,7 @@
     ]);
     const venueColors={'코엑스':'blue','킨텍스':'orange','세텍':'purple','코엑스 마곡':'magok','aT센터':'at','DDP':'ddp','세종문화회관':'sejong','국립중앙박물관':'museum','국립민속박물관':'pink','대한민국역사박물관':'history','전쟁기념관':'war','국립현대미술관':'mmca','국립현대미술관 덕수궁관':'mmcaD','서울시립미술관 서소문본관':'sema'};
     const venueLinks={'코엑스':'https://www.coex.co.kr/event/exhibitions-calendar/','킨텍스':'https://www.kintex.com/web/ko/event/clist.do?searchType=11','세텍':'https://www.setec.or.kr/front/schedule/calendar.do','코엑스 마곡':'https://coexmagok.co.kr/event-schedule/calendar/','aT센터':'https://www.at.or.kr/ac/event/acko311300/calendarList.action','DDP':'https://ddp.or.kr/index.html?menuno=240','세종문화회관':'https://www.sejongpac.or.kr/portal/performance/exhibit/performList.do?menuNo=200558','국립중앙박물관':'https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?menuId=current','국립민속박물관':'https://www.nfm.go.kr/user/planexhibition/home/20/selectPlanExhibitionNList.do?planExhibitionGbn=HOME','대한민국역사박물관':'https://www.much.go.kr/MUCH/contents/M02010100000.do?searchExhDivision=play&schExhCategory=EXH01','전쟁기념관':'https://www.warmemo.or.kr/','국립현대미술관':'https://www.mmca.go.kr/exhibitions/progressList.do','국립현대미술관 덕수궁관':'https://www.mmca.go.kr/exhibitions/progressList.do','서울시립미술관 서소문본관':'https://sema.seoul.go.kr/kr/visit/seosomun','서울시주관 축제류':'https://festival.seoul.go.kr/festival/year/loadMap.do'};
-    const venueBackgrounds={'코엑스':'#ef9a9a','킨텍스':'#d95c62','세텍':'#f7c4c4','코엑스 마곡':'#ffcaca','aT센터':'#fde68a','DDP':'#fecdd3','세종문화회관':'#bfdbfe','국립중앙박물관':'#5279cf','국립민속박물관':'#b4c9ff','대한민국역사박물관':'#9bb8f5','전쟁기념관':'#6b8ddd','국립현대미술관':'#bfdbfe','국립현대미술관 덕수궁관':'#dbeafe','서울시립미술관 서소문본관':'#bae6fd','서울시주관 축제류':'#bbf7d0'};
+    const venueBackgrounds={'코엑스':'#ef9a9a','킨텍스':'#d95c62','세텍':'#f7c4c4','코엑스 마곡':'#ffcaca','aT센터':'#fde68a','DDP':'#fecdd3','세종문화회관':'#bfdbfe','국립중앙박물관':'#dbeafe','국립민속박물관':'#b4c9ff','대한민국역사박물관':'#9bb8f5','전쟁기념관':'#6b8ddd','국립현대미술관':'#bfdbfe','국립현대미술관 덕수궁관':'#dbeafe','서울시립미술관 서소문본관':'#bae6fd','서울시주관 축제류':'#bbf7d0'};
     const museumVenues=['국립중앙박물관','국립민속박물관','대한민국역사박물관','전쟁기념관'];
     const artVenues=['국립현대미술관','국립현대미술관 덕수궁관','서울시립미술관 서소문본관','세종문화회관'];
     const coexLinks={

@@ -46,6 +46,7 @@ for (const [,href] of anchors) {
 assert(html.includes('<h1>10월의 눈팅</h1>'));
 assert(!html.includes('9월의 눈팅'));
 const byName = name => events.find(e => e.n === name);
+assert.equal(byName('비어페스트 코엑스 2026').finish, '2026-10-11');
 assert.equal(byName('2026 코베 베이비페어').finish, '2026-11-01');
 assert.equal(byName('포춘 어드벤처 (운세박람회)').finish, '2026-11-01');
 assert.equal(byName('서울드라마어워즈').start, '2026-10-08');
