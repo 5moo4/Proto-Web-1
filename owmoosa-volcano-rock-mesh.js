@@ -1,7 +1,7 @@
 /* Small pre-rendered 3D basalt meshes. Generated photographic material is mapped
    onto rotating irregular geometry; all animation reuses these cached frames. */
 window.buildVolcanicRockFrames = async function(atlas) {
-  const result=[], sides=24, rings=16, frames=40, size=384;
+  const result=[], sides=32, rings=20, frames=40, size=576;
   function triangle(c,image,p,q,r){
     const du1=q.u-p.u,dv1=q.v-p.v,du2=r.u-p.u,dv2=r.v-p.v,det=du1*dv2-du2*dv1;
     if(Math.abs(det)<.00001)return;
@@ -13,14 +13,14 @@ window.buildVolcanicRockFrames = async function(atlas) {
   }
   for(let type=0;type<6;type++){
     const tile=document.createElement('canvas');tile.width=tile.height=512;
-    tile.getContext('2d').drawImage(atlas,type%3*atlas.naturalWidth/3,Math.floor(type/3)*atlas.naturalHeight/2,atlas.naturalWidth/3,atlas.naturalHeight/2,0,0,512,512);
+    const material=tile.getContext('2d');material.imageSmoothingEnabled=true;material.imageSmoothingQuality='high';material.drawImage(atlas,type%3*atlas.naturalWidth/3,Math.floor(type/3)*atlas.naturalHeight/2,atlas.naturalWidth/3,atlas.naturalHeight/2,0,0,512,512);
     const forms=[[1,.88,.9],[.66,1.18,.68],[1.12,.62,.9],[.86,.96,.68],[1,.83,1.05],[.72,1.05,.84]];
-    const form=forms[type],vertices=[];
+    const form=forms[type],vertices=[],shapePhase=type*2.399963;
     for(let y=0;y<=rings;y++)for(let x=0;x<=sides;x++){
       const lat=y/rings*Math.PI,lon=x/sides*Math.PI*2;
-      const radial=.83+.115*Math.sin(lon*(type%3+2)+type)*Math.sin(lat*3+type)+.065*Math.cos(lon*5-lat*3);
+      const radial=.83+.115*Math.sin(lon*(type%3+2)+shapePhase)*Math.sin(lat*3+type)+.065*Math.cos(lon*5-lat*3)+.035*Math.sin(lon*7+shapePhase)*Math.sin(lat*5)+.045*Math.cos(lat*4+shapePhase);
       vertices.push({x:Math.sin(lat)*Math.cos(lon)*radial*form[0],y:Math.cos(lat)*radial*form[1],z:Math.sin(lat)*Math.sin(lon)*radial*form[2],
-        u:130+x/sides*252,v:130+y/rings*252});
+        u:112+x/sides*288,v:112+y/rings*288});
     }
     const faces=[];for(let y=0;y<rings;y++)for(let x=0;x<sides;x++){const a=y*(sides+1)+x,b=a+1,c=a+sides+1,d=c+1;faces.push([a,c,b],[b,c,d]);}
     const batch=[];

@@ -1,7 +1,7 @@
 /* Sample-only atmosphere: no production stylesheet changes. */
-.frame { background: #020305; }
+.frame { background: #171e26; }
 .frame:not(.is-inside) > .room::before {
-  background: radial-gradient(ellipse at 55% 15%, #292c32 0%, #11141a 34%, #030508 75%) !important;
+  background: radial-gradient(ellipse at 55% 15%, #46515d 0%, #2b3540 42%, #171e26 100%) !important;
   animation: none !important;
   transform: none !important;
 }
