@@ -405,3 +405,5 @@
 .storm-post-card:hover { border-color: #fff; background: #15223be8; }
 .storm-post-card:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
 @media(max-width:540px){.storm-post-card{grid-template-columns:75px minmax(0,1fr);padding:12px;gap:12px}.storm-post-card strong{font-size:17px}.storm-post-art{min-height:90px}}
+
+.volcano-heading{margin-top:28px!important}.volcano-post-art{background:url("./owmoosa-volcano-background.png") center/cover}.volcano-post-card:hover{background:#2b1b14e8;border-color:#ffbb85}
