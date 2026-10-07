@@ -23,7 +23,8 @@ const screens = { start: $('start-screen'), quiz: $('quiz-screen'), result: $('r
 let selectedCount = 50, state = null;
 const shuffle = list => { const copy = [...list]; for (let i = copy.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [copy[i], copy[j]] = [copy[j], copy[i]]; } return copy; };
 const isHiragana = item => /^[\u3040-\u309f]+$/.test(item.kana);
-const isKatakana = item => /^[\u30a0-\u30ff]+$/.test(item.kana);
+// Explicit scope also includes katakana-based words such as エモい and オタ活.
+const isKatakana = item => item.script === 'katakana' || /^[\u30a0-\u30ff]+$/.test(item.kana);
 function selectedPool() {
   const scope = document.querySelector('input[name="script"]:checked').value;
   if (scope === 'hiragana') return DB.filter(isHiragana);
