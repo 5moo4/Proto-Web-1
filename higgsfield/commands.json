@@ -1,0 +1,1612 @@
+{
+  "schemaVersion": 1,
+  "title": "힉스필드 명령어 단어장",
+  "source": "사용자 제공 목록",
+  "categories": [
+    {
+      "id": "image",
+      "label": "IMAGE Slash Presets",
+      "usesSlash": true
+    },
+    {
+      "id": "video",
+      "label": "VIDEO Slash Presets",
+      "usesSlash": true
+    },
+    {
+      "id": "camera",
+      "label": "VIDEO Camera Controls",
+      "usesSlash": false
+    }
+  ],
+  "commands": [
+    {
+      "category": "image",
+      "name": "/angles",
+      "meaning": "여러 각도에서 제품 보여주기",
+      "id": 1,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fangles%20image%20preset",
+        "query": "Higgsfield /angles image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/before-after",
+      "meaning": "사용 전·후 비교",
+      "id": 2,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fbefore-after%20image%20preset",
+        "query": "Higgsfield /before-after image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/benefits",
+      "meaning": "제품 핵심 장점 표현",
+      "id": 3,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fbenefits%20image%20preset",
+        "query": "Higgsfield /benefits image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/bundle",
+      "meaning": "여러 제품을 세트로 구성",
+      "id": 4,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fbundle%20image%20preset",
+        "query": "Higgsfield /bundle image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/care-guide",
+      "meaning": "제품 관리·보관 가이드",
+      "id": 5,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fcare-guide%20image%20preset",
+        "query": "Higgsfield /care-guide image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/color-pop",
+      "meaning": "강렬한 색상으로 제품 강조",
+      "id": 6,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fcolor-pop%20image%20preset",
+        "query": "Higgsfield /color-pop image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/fabric-wave",
+      "meaning": "제품 주변에 흐르는 천 연출",
+      "id": 7,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Ffabric-wave%20image%20preset",
+        "query": "Higgsfield /fabric-wave image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/feature-zoom",
+      "meaning": "특정 핵심 기능 확대·강조",
+      "id": 8,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Ffeature-zoom%20image%20preset",
+        "query": "Higgsfield /feature-zoom image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/flatlay",
+      "meaning": "제품을 배치하고 위에서 촬영",
+      "id": 9,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fflatlay%20image%20preset",
+        "query": "Higgsfield /flatlay image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/gym-bag",
+      "meaning": "운동용품과 제품을 함께 구성",
+      "id": 10,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fgym-bag%20image%20preset",
+        "query": "Higgsfield /gym-bag image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/hero-shot",
+      "meaning": "제품을 주인공으로 만든 대표 광고컷",
+      "id": 11,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fhero-shot%20image%20preset",
+        "query": "Higgsfield /hero-shot image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/how-it-works",
+      "meaning": "제품 작동 방식 설명",
+      "id": 12,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fhow-it-works%20image%20preset",
+        "query": "Higgsfield /how-it-works image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/ice-capsule",
+      "meaning": "투명한 얼음 속 제품 연출",
+      "id": 13,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fice-capsule%20image%20preset",
+        "query": "Higgsfield /ice-capsule image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/in-hand",
+      "meaning": "손에 제품을 들고 있는 모습",
+      "id": 14,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fin-hand%20image%20preset",
+        "query": "Higgsfield /in-hand image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/inside-pack",
+      "meaning": "패키지 내부·구성품 표현",
+      "id": 15,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Finside-pack%20image%20preset",
+        "query": "Higgsfield /inside-pack image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/kitchen-scene",
+      "meaning": "주방 환경 속 제품",
+      "id": 16,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fkitchen-scene%20image%20preset",
+        "query": "Higgsfield /kitchen-scene image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/luxury",
+      "meaning": "고급스럽고 프리미엄한 제품컷",
+      "id": 17,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fluxury%20image%20preset",
+        "query": "Higgsfield /luxury image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/main-benefit",
+      "meaning": "가장 중요한 장점 하나 강조",
+      "id": 18,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fmain-benefit%20image%20preset",
+        "query": "Higgsfield /main-benefit image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/minimalist-white",
+      "meaning": "깔끔한 흰 배경 상품컷",
+      "id": 19,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fminimalist-white%20image%20preset",
+        "query": "Higgsfield /minimalist-white image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/moodboard",
+      "meaning": "제품 중심 브랜드 무드보드",
+      "id": 20,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fmoodboard%20image%20preset",
+        "query": "Higgsfield /moodboard image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/myth-fact",
+      "meaning": "오해와 사실 비교",
+      "id": 21,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fmyth-fact%20image%20preset",
+        "query": "Higgsfield /myth-fact image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/new-drop",
+      "meaning": "신제품 출시·공개 이미지",
+      "id": 22,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fnew-drop%20image%20preset",
+        "query": "Higgsfield /new-drop image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/on-desk",
+      "meaning": "책상 위 제품 연출",
+      "id": 23,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fon-desk%20image%20preset",
+        "query": "Higgsfield /on-desk image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/pedestal-shot",
+      "meaning": "받침대 위 웅장한 제품컷",
+      "id": 24,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fpedestal-shot%20image%20preset",
+        "query": "Higgsfield /pedestal-shot image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/powder-cloud",
+      "meaning": "제품 주변 컬러 파우더 구름",
+      "id": 25,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fpowder-cloud%20image%20preset",
+        "query": "Higgsfield /powder-cloud image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/power-angle",
+      "meaning": "강렬한 로우앵글 제품컷",
+      "id": 26,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fpower-angle%20image%20preset",
+        "query": "Higgsfield /power-angle image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/product-match",
+      "meaning": "적합한 제품 선택 가이드",
+      "id": 27,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fproduct-match%20image%20preset",
+        "query": "Higgsfield /product-match image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/quick-steps",
+      "meaning": "짧은 단계별 사용법",
+      "id": 28,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fquick-steps%20image%20preset",
+        "query": "Higgsfield /quick-steps image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/reel-cover",
+      "meaning": "릴스용 정적 커버",
+      "id": 29,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Freel-cover%20image%20preset",
+        "query": "Higgsfield /reel-cover image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/retail-stack",
+      "meaning": "여러 제품 패키지를 쌓아 구성",
+      "id": 30,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fretail-stack%20image%20preset",
+        "query": "Higgsfield /retail-stack image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/saveable-tip",
+      "meaning": "저장하기 좋은 정보·팁 카드",
+      "id": 31,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fsaveable-tip%20image%20preset",
+        "query": "Higgsfield /saveable-tip image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/share-card",
+      "meaning": "SNS 공유용 비주얼",
+      "id": 32,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fshare-card%20image%20preset",
+        "query": "Higgsfield /share-card image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/shelf-ready",
+      "meaning": "매장 선반에 진열된 제품",
+      "id": 33,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fshelf-ready%20image%20preset",
+        "query": "Higgsfield /shelf-ready image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/signature-frame",
+      "meaning": "브랜드를 대표하는 시그니처 비주얼",
+      "id": 34,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fsignature-frame%20image%20preset",
+        "query": "Higgsfield /signature-frame image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/specs",
+      "meaning": "제품 주요 사양 표시",
+      "id": 35,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fspecs%20image%20preset",
+        "query": "Higgsfield /specs image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/swipe-opener",
+      "meaning": "캐러셀 첫 번째 표지",
+      "id": 36,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fswipe-opener%20image%20preset",
+        "query": "Higgsfield /swipe-opener image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/symmetry",
+      "meaning": "완벽한 대칭 구도",
+      "id": 37,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fsymmetry%20image%20preset",
+        "query": "Higgsfield /symmetry image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/three-reasons",
+      "meaning": "제품을 선택할 이유 3가지",
+      "id": 38,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fthree-reasons%20image%20preset",
+        "query": "Higgsfield /three-reasons image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/travel-pack",
+      "meaning": "여행용품과 제품 구성",
+      "id": 39,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Ftravel-pack%20image%20preset",
+        "query": "Higgsfield /travel-pack image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/unboxing",
+      "meaning": "열린 상자와 구성품 표현",
+      "id": 40,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Funboxing%20image%20preset",
+        "query": "Higgsfield /unboxing image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/usage-guide",
+      "meaning": "제품 사용방법 안내",
+      "id": 41,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fusage-guide%20image%20preset",
+        "query": "Higgsfield /usage-guide image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/vertical-hook",
+      "meaning": "시선을 끄는 세로형 비주얼",
+      "id": 42,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fvertical-hook%20image%20preset",
+        "query": "Higgsfield /vertical-hook image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/water-splash",
+      "meaning": "제품 주변 물 튀김 효과",
+      "id": 43,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fwater-splash%20image%20preset",
+        "query": "Higgsfield /water-splash image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/weekend-carry",
+      "meaning": "주말 필수품과 제품 구성",
+      "id": 44,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fweekend-carry%20image%20preset",
+        "query": "Higgsfield /weekend-carry image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "image",
+      "name": "/whats-inside",
+      "meaning": "제품 내용물·구성품·성분 표현",
+      "id": 45,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fwhats-inside%20image%20preset",
+        "query": "Higgsfield /whats-inside image preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/crane-reveal",
+      "meaning": "수직 이동하며 제품·장면 공개",
+      "id": 46,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fcrane-reveal%20product%20video%20preset",
+        "query": "Higgsfield /crane-reveal product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/detail-scan",
+      "meaning": "제품 디테일을 순서대로 훑기",
+      "id": 47,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fdetail-scan%20product%20video%20preset",
+        "query": "Higgsfield /detail-scan product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/floating-roll",
+      "meaning": "공중에 뜬 제품을 천천히 회전",
+      "id": 48,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Ffloating-roll%20product%20video%20preset",
+        "query": "Higgsfield /floating-roll product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/half-turn",
+      "meaning": "제품을 부드럽게 180° 회전",
+      "id": 49,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fhalf-turn%20product%20video%20preset",
+        "query": "Higgsfield /half-turn product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/impact",
+      "meaning": "제품 주변 입자 폭발 효과",
+      "id": 50,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fimpact%20product%20video%20preset",
+        "query": "Higgsfield /impact product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/label-trace",
+      "meaning": "로고·라벨을 따라 카메라 이동",
+      "id": 51,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Flabel-trace%20product%20video%20preset",
+        "query": "Higgsfield /label-trace product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/light-sweep",
+      "meaning": "빛이 제품 표면을 훑고 지나감",
+      "id": 52,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Flight-sweep%20product%20video%20preset",
+        "query": "Higgsfield /light-sweep product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/liquid-wrap",
+      "meaning": "액체가 제품 주변을 감싸며 흐름",
+      "id": 53,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fliquid-wrap%20product%20video%20preset",
+        "query": "Higgsfield /liquid-wrap product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/macro-glide",
+      "meaning": "제품 표면을 초근접으로 부드럽게 이동",
+      "id": 54,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fmacro-glide%20product%20video%20preset",
+        "query": "Higgsfield /macro-glide product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/paint-wave",
+      "meaning": "컬러 페인트가 물결처럼 움직임",
+      "id": 55,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fpaint-wave%20product%20video%20preset",
+        "query": "Higgsfield /paint-wave product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/product-spin",
+      "meaning": "제품을 360° 회전",
+      "id": 56,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fproduct-spin%20product%20video%20preset",
+        "query": "Higgsfield /product-spin product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/pull-back",
+      "meaning": "카메라가 후퇴하며 전체 장면 공개",
+      "id": 57,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fpull-back%20product%20video%20preset",
+        "query": "Higgsfield /pull-back product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/push-in",
+      "meaning": "카메라가 피사체 쪽으로 접근",
+      "id": 58,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fpush-in%20product%20video%20preset",
+        "query": "Higgsfield /push-in product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/shadow-motion",
+      "meaning": "제품 주변 그림자를 움직임",
+      "id": 59,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fshadow-motion%20product%20video%20preset",
+        "query": "Higgsfield /shadow-motion product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/sunrise-pass",
+      "meaning": "어둠에서 따뜻한 빛으로 변화",
+      "id": 60,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fsunrise-pass%20product%20video%20preset",
+        "query": "Higgsfield /sunrise-pass product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/texture-track",
+      "meaning": "제품 표면·재질을 따라 이동",
+      "id": 61,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Ftexture-track%20product%20video%20preset",
+        "query": "Higgsfield /texture-track product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/topdown-dive",
+      "meaning": "탑뷰에서 클로즈업으로 진입",
+      "id": 62,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Ftopdown-dive%20product%20video%20preset",
+        "query": "Higgsfield /topdown-dive product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "video",
+      "name": "/whip-pan",
+      "meaning": "매우 빠른 팬으로 제품·장면 전환",
+      "id": 63,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20%2Fwhip-pan%20product%20video%20preset",
+        "query": "Higgsfield /whip-pan product video preset",
+        "checkedAt": "2026-10-06",
+        "verification": "Official recipe confirmed through preset catalog and individual lookup; no public example-page URL supplied. Exact example landing unverified."
+      }
+    },
+    {
+      "category": "camera",
+      "name": "3D Rotation",
+      "meaning": "피사체를 입체적으로 회전",
+      "id": 64,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/6f06f47e-922e-4660-9fe9-754e4be69696",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "360 Orbit",
+      "meaning": "카메라가 피사체 주위를 360° 공전",
+      "id": 65,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/d7c180bc-793c-4d29-83ba-c2d5e84e53d4",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Aerial Pullback",
+      "meaning": "공중에서 후퇴하며 넓은 공간 공개",
+      "id": 66,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/a0bfa1b6-2dc7-4bbe-889f-fc04c27288ba",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Arc Left",
+      "meaning": "피사체 주변을 왼쪽 원호로 이동",
+      "id": 67,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/2a5d8f86-aef3-4b34-b5ee-fb2020daa131",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Arc Right",
+      "meaning": "피사체 주변을 오른쪽 원호로 이동",
+      "id": 68,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/0bdbf318-f918-4f9b-829a-74cab681d806",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "BTS",
+      "meaning": "비하인드·메이킹 촬영 느낌",
+      "id": 69,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/b779cfda-9624-4f61-80bc-f5d0461f3959",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Buckle Up",
+      "meaning": "바닥 아래에서 올려다보는 극단적인 로우앵글",
+      "id": 70,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/4ef72175-227a-418b-923d-2831dcdf7d4f",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Bullet Time",
+      "meaning": "시간이 멈춘 듯 피사체 주변을 회전",
+      "id": 71,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/bb341c21-9548-4efb-8a91-b6202167b344",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Car Chasing",
+      "meaning": "차량을 추격하며 촬영",
+      "id": 72,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/a76f2e99-0a41-4fdf-934d-9c95b0ee85bf",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Car Grip",
+      "meaning": "차량에 장착한 카메라 느낌",
+      "id": 73,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/7c174c3f-7d11-451c-b7da-03be50f7d010",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Crane Down",
+      "meaning": "카메라가 높은 곳에서 하강",
+      "id": 74,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/494db3c2-2297-4cf7-bef7-cba0cebe73ee",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Crane Over The Head",
+      "meaning": "카메라가 피사체 머리 위를 넘어감",
+      "id": 75,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/f77584f2-7442-4128-91b5-095829b108c7",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Crane Up",
+      "meaning": "카메라가 위로 상승",
+      "id": 76,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/45d7f47f-2c7b-4c5e-84b7-943758a39dcc",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Crash Zoom In",
+      "meaning": "순간적으로 강하게 줌인",
+      "id": 77,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/a2dddb76-03fa-429e-9905-577bffdf9d38",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Crash Zoom Out",
+      "meaning": "순간적으로 강하게 줌아웃",
+      "id": 78,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/3972c090-a448-4fd4-b8f0-cb71b4b523ee",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Dolly In",
+      "meaning": "카메라 자체가 앞으로 이동",
+      "id": 79,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/1438937c-a220-4859-93f4-f373da3f73fb",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Dolly Left",
+      "meaning": "카메라 자체가 왼쪽으로 이동",
+      "id": 80,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/36186f21-e20f-479f-a7b9-f7f12354a4ab",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Dolly Out",
+      "meaning": "카메라 자체가 뒤로 이동",
+      "id": 81,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/a787450c-b2d8-4321-967a-8c302da05949",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Dolly Right",
+      "meaning": "카메라 자체가 오른쪽으로 이동",
+      "id": 82,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/22f946c2-ed60-44bf-bca3-2be92c07d261",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Dolly Zoom In",
+      "meaning": "돌리 이동+줌으로 원근 왜곡",
+      "id": 83,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/114245a3-93fb-434a-9299-44ca9e4656a3",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Dolly Zoom Out",
+      "meaning": "반대 방향 돌리+줌 원근 효과",
+      "id": 84,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/e057dbd5-1734-4462-bb4c-7d64fe20795e",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Double Dolly",
+      "meaning": "카메라와 피사체 이동을 조합",
+      "id": 85,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/e522bff4-da3b-4f7d-8c6e-f925b60979c5",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Dutch Angle",
+      "meaning": "화면 수평을 기울인 구도",
+      "id": 86,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/b593944e-ae3e-47ce-8c6d-ea8dd87fe01f",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Eating Zoom",
+      "meaning": "음식·먹는 장면을 줌으로 강조",
+      "id": 87,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/f61ad61c-e2fc-4452-bcf2-91499c865241",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Eyes In",
+      "meaning": "인물의 눈 쪽으로 강하게 진입",
+      "id": 88,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/3afdf962-2709-44a9-a41c-6565e6998529",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Fisheye",
+      "meaning": "어안렌즈식 초광각 왜곡",
+      "id": 89,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/6c689fc3-e421-4ed5-892c-2092d1c60be0",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Flying Cam Transition",
+      "meaning": "날아가듯 이동하며 장면 전환",
+      "id": 90,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/e43378b9-b20b-4158-a626-745bbbcacdbd",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Focus Change",
+      "meaning": "한 지점에서 다른 지점으로 초점 이동",
+      "id": 91,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/390e084a-4a80-410b-a808-77411828c61d",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "FPV Drone",
+      "meaning": "1인칭 드론처럼 빠르고 자유롭게 이동",
+      "id": 92,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/5eb82f94-2b98-4e4a-ab4b-ee6c872fb2c7",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Glam",
+      "meaning": "화려한 패션·뷰티 촬영 느낌",
+      "id": 93,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/ae4a319d-a06f-4b30-8b67-55a35a22f24a",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Handheld",
+      "meaning": "손으로 든 카메라 같은 자연스러운 흔들림",
+      "id": 94,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/cf529456-6478-4622-a572-052f0d8ae378",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Head Tracking",
+      "meaning": "인물의 머리를 계속 추적",
+      "id": 95,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/fe520e06-7971-4f28-9e10-e45911c57bb6",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Hero Cam",
+      "meaning": "피사체를 웅장하고 강렬하게 강조",
+      "id": 96,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/a8c54413-c991-416a-8ac8-32c6a42caa6c",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Hyperlapse",
+      "meaning": "이동하면서 시간을 빠르게 압축",
+      "id": 97,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/f0f07997-34fe-4bef-84c1-ee9d4da94a1a",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Incline",
+      "meaning": "세계가 기울어진 듯, 피사체가 가파른 각도로 서 있거나 움직이는 연출",
+      "id": 98,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/b120f292-74e3-4878-817b-626e203f8a92",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Jib Down",
+      "meaning": "지브암처럼 부드럽게 하강",
+      "id": 99,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/4e2318ed-572e-4d5a-bcf9-7e70e4755a52",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Jib Up",
+      "meaning": "지브암처럼 부드럽게 상승",
+      "id": 100,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/30a7fe68-0967-419a-b7cb-0d0bed480b09",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Lazy Susan",
+      "meaning": "정지한 피사체 주위를 카메라가 회전",
+      "id": 101,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/025866ff-677c-4af2-92ef-52d6ec3b035e",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Low Shutter",
+      "meaning": "저속 셔터식 움직임 잔상",
+      "id": 102,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/f7949a2f-2bcd-459a-96c0-80eb222abcdc",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Mouth In",
+      "meaning": "인물의 입 쪽으로 강하게 진입",
+      "id": 103,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/7351a8ad-9754-4844-94f1-00baf293d588",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Object POV",
+      "meaning": "특정 물체의 시점으로 촬영",
+      "id": 104,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/ab14b29d-f23e-449e-a40e-ebdbb4f7437a",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Overhead",
+      "meaning": "바로 위에서 수직으로 내려다봄",
+      "id": 105,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/b6395b91-a356-4bc6-9cda-fc2793b3d706",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Pan Left",
+      "meaning": "고정 위치에서 카메라를 왼쪽으로 회전",
+      "id": 106,
+      "reference": {
+        "type": "search",
+        "url": "https://www.google.com/search?q=Higgsfield%20Pan%20Left%20camera%20control",
+        "query": "Higgsfield Pan Left camera control",
+        "checkedAt": "2026-10-06",
+        "verification": "Individual page found, but example video not confirmed."
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Pan Right",
+      "meaning": "고정 위치에서 카메라를 오른쪽으로 회전",
+      "id": 107,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/ce0b3d96-be4c-4b2d-962a-340dd386d910",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Rapid Zoom In",
+      "meaning": "빠르게 줌인",
+      "id": 108,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/3dee792a-3fb1-40e5-8f46-3a1db42d64b1",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Rapid Zoom Out",
+      "meaning": "빠르게 줌아웃",
+      "id": 109,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/222b3cfc-5e24-44ee-b7f5-94deb2d2b514",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Road Rush",
+      "meaning": "도로를 빠르게 질주하는 느낌",
+      "id": 110,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/c9c68a56-1f59-46d9-90f2-ee8535f0511d",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Robo Arm",
+      "meaning": "로봇암처럼 정밀하고 역동적으로 이동",
+      "id": 111,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/1bd4363a-6e5a-4c57-90a5-30f0733a769b",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Snorricam",
+      "meaning": "카메라를 인물에 고정해 배경이 움직이는 효과",
+      "id": 112,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/893cb65f-c528-40aa-83d8-c5aeb2bfe59f",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Static",
+      "meaning": "카메라 완전 고정",
+      "id": 113,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/c43e6d97-a55a-45d7-b5bc-b3a55d3a6e8e",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Super Dolly In",
+      "meaning": "매우 강하고 극적인 카메라 전진",
+      "id": 114,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/6a6fb1b9-28ea-44c8-9be4-e5d8c6ab1f3a",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Super Dolly Out",
+      "meaning": "매우 강하고 극적인 카메라 후퇴",
+      "id": 115,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/d66685ce-8c2b-4aeb-8d4a-195d474c7eca",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Through Object In",
+      "meaning": "물체를 통과하며 장면 안으로 진입",
+      "id": 116,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/7fd00618-aa73-4fae-adb7-98ed16773eaa",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Through Object Out",
+      "meaning": "물체를 통과하며 장면 밖으로 이탈",
+      "id": 117,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/510d88f9-d640-494c-b891-7446ca5cab40",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Tilt Down",
+      "meaning": "고정 위치에서 카메라를 아래로 회전",
+      "id": 118,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/1958a932-8ffb-4f1a-a5cd-480858f6ae84",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Tilt Up",
+      "meaning": "고정 위치에서 카메라를 위로 회전",
+      "id": 119,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/9f127dad-0db0-4e3d-a440-3cfbffca30b6",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Timelapse Glam",
+      "meaning": "패션·뷰티 스타일 시간 압축",
+      "id": 120,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/4b2db33e-b163-484b-b33a-7b0a04d81ddf",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Timelapse Human",
+      "meaning": "중심 인물은 정지하고 주변이 빠르게 움직이는 효과",
+      "id": 121,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/b4ba822f-9171-4547-997e-c86de335385e",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Timelapse Landscape",
+      "meaning": "풍경 변화를 시간 압축",
+      "id": 122,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/d45f0a80-62b8-4651-bd62-0373a09b8f11",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Whip Pan",
+      "meaning": "매우 빠르게 좌우 회전",
+      "id": 123,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/7a144766-cdd2-4b73-8a27-67b35f2d4ba2",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Wiggle",
+      "meaning": "카메라를 작게 흔드는 움직임",
+      "id": 124,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/cfbe9732-1b5a-4f59-9dbc-801f85f5c702",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "YoYo Zoom",
+      "meaning": "줌인·줌아웃을 왕복",
+      "id": 125,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/702c6210-9798-4888-b7c9-e794c8fcaaef",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Zoom In",
+      "meaning": "카메라는 고정하고 렌즈로 확대",
+      "id": 126,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/a3a3db5d-d3c5-4d95-b429-235ae3d1ee82",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    },
+    {
+      "category": "camera",
+      "name": "Zoom Out",
+      "meaning": "카메라는 고정하고 렌즈로 축소",
+      "id": 127,
+      "reference": {
+        "type": "official",
+        "url": "https://higgsfield.ai/ko/motion/f9e6792f-b385-4eca-87f6-f439e917a7aa",
+        "checkedAt": "2026-10-06",
+        "verification": "Matching page title and video elements confirmed"
+      }
+    }
+  ]
+}

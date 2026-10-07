@@ -407,3 +407,7 @@
 @media(max-width:540px){.storm-post-card{grid-template-columns:75px minmax(0,1fr);padding:12px;gap:12px}.storm-post-card strong{font-size:17px}.storm-post-art{min-height:90px}}
 
 .volcano-heading{margin-top:28px!important}.volcano-post-art{background:url("./owmoosa-volcano-background.png") center/cover}.volcano-post-card:hover{background:#2b1b14e8;border-color:#ffbb85}
+
+/* Project 03: Higgsfield field guide. */
+.higgsfield-art{display:flex;flex-direction:column;justify-content:center;gap:8px;background:#d7f99b;color:#24351d}.higgsfield-art b{font:600 32px monospace}.higgsfield-art small{font:7px monospace;letter-spacing:.06em}
+.frame .project-grid>.project-card:last-child:nth-child(odd){grid-column:1 / -1;max-width:373px}

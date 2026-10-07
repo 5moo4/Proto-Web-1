@@ -29,4 +29,4 @@ document.querySelectorAll('[data-space]').forEach(button=>button.addEventListene
 document.querySelector('#back').addEventListener('click',()=>{frame.classList.remove('is-inside');delete frame.dataset.space;document.querySelector('#back').hidden=true;document.querySelector('#step').textContent='01 — 현관'});
 window.addEventListener('pointermove',event=>{if(matchMedia('(pointer:fine)').matches){frame.style.setProperty('--x',((event.clientX/innerWidth)-.5).toFixed(3));frame.style.setProperty('--y',((event.clientY/innerHeight)-.5).toFixed(3))}});
 window.addEventListener('keydown',event=>{if(event.key==='Escape'&&frame.classList.contains('is-inside'))document.querySelector('#back').click()});
-</script><script src="./owmoosa-storm-sample.js?v=storm-natural-21" defer></script></body></html>
+</script><script src="./owmoosa-storm-sample.js?v=storm-natural-30" defer></script></body></html>

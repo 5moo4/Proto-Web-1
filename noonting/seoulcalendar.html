@@ -13,21 +13,19 @@
     .page{max-width:1180px;margin:auto;padding:42px 28px 54px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:38px}.brand{display:flex;align-items:center;gap:11px;font-size:18px;font-weight:800}.mark{width:27px;height:27px;background:var(--lime);border:2px solid var(--ink);border-radius:8px;display:grid;place-items:center;font-size:16px;transform:rotate(-7deg)}.today{border:1.5px solid var(--ink);background:transparent;border-radius:999px;padding:10px 15px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}.intro{display:flex;align-items:end;justify-content:center;text-align:center;margin-bottom:26px}.kicker{color:var(--blue);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:0 0 9px}.intro h1{font-family:"Jua", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;font-size:42px;line-height:1.08;margin:0;font-weight:400;letter-spacing:-.045em}.intro p{margin:0 0 3px;color:var(--muted);font-size:15px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:20px}.calendar,.side{background:var(--card);border:1px solid var(--line);border-radius:22px}.calendar{padding:25px}.monthbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:23px}.monthbar h2{margin:0;font-size:23px}.month-title{display:flex;align-items:center;gap:12px}.weather-link{display:inline-flex;align-items:center;padding:7px 11px;border:1px solid #8fb8d8;border-radius:9px;background:#eef7ff;color:#245a83;text-decoration:none;font-size:12px;font-weight:700;white-space:nowrap}.weather-link:hover{background:#dceeff}.arrows{display:flex;gap:8px}.arrows button{width:34px;height:34px;border:1px solid var(--line);border-radius:10px;background:white;font-size:19px;cursor:pointer}.week,.grid{display:grid;grid-template-columns:repeat(7,1fr)}.week div{font-size:12px;font-weight:800;color:var(--muted);padding:0 7px 11px}.week div:first-child{color:#dc5f71}.grid{border-top:1px solid var(--line);border-left:1px solid var(--line)}.day{min-height:114px;padding:8px 7px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative}.num{font-size:13px;font-weight:700;display:inline-grid;place-items:center;width:25px;height:25px;border-radius:50%}.sun .num{color:#dc5f71}.blank{background:#fafaf6}.event{display:block;width:100%;text-align:left;border:0;border-radius:7px;margin-top:5px;padding:5px 6px;color:#18200f;font:700 11px/1.2 inherit;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.blue{background:#ef9a9a}.orange{background:#d95c62}.purple{background:#f7c4c4}.magok{background:#ffcaca}.lime{background:#7ea6f2}.pink{background:#b4c9ff}.museum{background:#5279cf}.history{background:#9bb8f5}.war{background:#6b8ddd}.chosen .num{background:var(--ink);color:white}.side{padding:23px}.side h3{font-size:16px;margin:0 0 5px}.side .date{font-size:13px;color:var(--muted);margin-bottom:22px}.feature{background:var(--lime);border-radius:15px;padding:17px;margin-bottom:20px}.feature span{font-size:12px;font-weight:800}.feature h4{font-size:20px;line-height:1.2;margin:8px 0}.feature p{font-size:13px;line-height:1.45;margin:0;color:#45513a}.detail{border-top:1px solid var(--line);padding-top:18px}.detail h4{font-size:14px;margin:0 0 14px}.meta{display:flex;gap:10px;margin:11px 0;font-size:13px;color:var(--muted)}.icon{font-size:15px;width:15px}.hint{font-size:12px;color:var(--muted);line-height:1.5;margin:22px 0 0}@media(max-width:760px){.page{padding:25px 15px}.intro{display:block;text-align:center}.intro p{margin-top:12px}.layout{grid-template-columns:1fr}.side{display:block}.calendar{padding:15px;border-radius:17px}.day{min-height:72px;padding:5px}.event{font-size:9px;padding:4px}.intro h1{font-size:32px}.week div{padding:0 4px 9px}.monthbar{margin-bottom:16px}}
     .week,.grid{grid-template-columns:repeat(7,minmax(0,1fr))}
     .calendar,.day,.side{min-width:0}
-    .event{max-width:100%;font-family:inherit;font-size:10px;font-weight:600;line-height:1.4}
+    .event{max-width:100%;font-family:inherit;font-size:9px;font-weight:600;line-height:1.4}
     .feature h4,.feature p,.meta{overflow-wrap:anywhere}
-    .event-name{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .event-name{display:block;min-width:0;white-space:normal;overflow-wrap:anywhere;text-align:left}
     .event.blue,.event.orange,.event.purple,.event.magok{background:#ffdede}
     .event.blue{border:2px solid #e63946}.event.orange{border:2px solid #9b2226}.event.purple{border:2px solid #f77f00}.event.magok{border:2px solid #6a1b9a}
     .event.lime,.event.pink,.event.museum,.event.history,.event.war,.event.mmca,.event.mmcaD{background:#dce8ff}
     .event.lime{border:2px solid #1d4ed8}.event.pink{border:2px solid #06b6d4}.event.museum{border:2px solid #1e3a8a}.event.history{border:2px solid #16a34a}.event.war{border:2px solid #7c3aed}
     .event.blue,.event.orange,.event.purple,.event.magok,.event.lime,.event.pink,.event.museum,.event.history,.event.war,.event.mmca,.event.mmcaD{background:#f5f5f1;border:0}
-    .venue-legend{display:none}
-    .event.blue{background:#ef4444;color:#111827}.event.orange{background:#f97316}.event.purple{background:#c2410c;color:#fff}.event.magok{background:#fb923c}
-    .event.lime{background:#111827;color:#fff}.event.pink{background:#374151;color:#fff}.event.museum{background:#000;color:#fff}.event.history{background:#d1d5db}.event.war{background:#6b7280;color:#fff}.event.mmca{background:#1e3a8a;color:#fff}.event.mmcaD{background:#93c5fd;color:#0f172a}.event.sema{background:#38bdf8;color:#0f172a}
-    .event.festival{background:#15803d;color:#fff}.event.at{background:#eab308;color:#1c1917}.event.ddp{background:#be123c;color:#fff}.event.sejong{background:#2563eb;color:#fff}
-    .venue-legend{display:flex}.venue-legend .blue{background:#ef4444}.venue-legend .orange{background:#f97316}.venue-legend .purple{background:#c2410c}.venue-legend .magok{background:#fb923c}.venue-legend .at{background:#eab308}.venue-legend .ddp{background:#be123c}.venue-legend .sejong{background:#2563eb}.venue-legend .museum{background:#000}.venue-legend .folk{background:#374151}.venue-legend .history{background:#d1d5db}.venue-legend .war{background:#6b7280}.venue-legend .mmca{background:#1e3a8a}.venue-legend .mmcaD{background:#93c5fd}.venue-legend .sema{background:#38bdf8}.venue-legend .festival{background:#15803d}
+    :is(.event,.source-links a,.feature).blue{background:#ef4444;color:#111827}:is(.event,.source-links a,.feature).orange{background:#f97316;color:#18200f}:is(.event,.source-links a,.feature).purple{background:#c2410c;color:#fff}:is(.event,.source-links a,.feature).magok{background:#fb923c;color:#18200f}
+    :is(.event,.source-links a,.feature).lime{background:#111827;color:#fff}:is(.event,.source-links a,.feature).pink{background:#374151;color:#fff}:is(.event,.source-links a,.feature).museum{background:#000;color:#fff}:is(.event,.source-links a,.feature).history{background:#d1d5db;color:#18200f}:is(.event,.source-links a,.feature).war{background:#6b7280;color:#fff}:is(.event,.source-links a,.feature).mmca{background:#1e3a8a;color:#fff}:is(.event,.source-links a,.feature).mmcaD{background:#93c5fd;color:#0f172a}:is(.event,.source-links a,.feature).sema{background:#38bdf8;color:#0f172a}
+    :is(.event,.source-links a,.feature).festival{background:#15803d;color:#fff}:is(.event,.source-links a,.feature).at{background:#eab308;color:#1c1917}:is(.event,.source-links a,.feature).ddp{background:#be123c;color:#fff}:is(.event,.source-links a,.feature).sejong{background:#2563eb;color:#fff}
     .event-period{display:block;font-size:12px;font-weight:400;margin-top:2px}
-    .venue-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:9px 16px;margin:0 0 12px;font-size:13px;font-weight:600}.venue-legend span{display:flex;align-items:center;gap:7px;white-space:nowrap}.venue-legend i{display:inline-block;flex:0 0 14px;width:14px;height:14px;border-radius:4px}.source-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:7px;margin:0 0 16px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#fafaf6;font-size:12px}.source-links .label{flex-basis:100%;font-size:16px;font-weight:800;color:#3b3b35;margin:0 0 4px;text-align:center}.source-links a{padding:5px 8px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);text-decoration:none;font-weight:700}.source-links a:hover{border-color:var(--ink)}.feature{background:#cbd7ff}
+    .source-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:7px;margin:0 0 16px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#fafaf6;font-size:12px}.source-links .label{flex-basis:100%;font-size:16px;font-weight:800;color:#3b3b35;margin:0 0 4px;text-align:center}.source-links a{padding:5px 8px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);text-decoration:none;font-weight:700}.source-links a:hover{border-color:var(--ink)}.feature{background:#cbd7ff}
     .purple{background:#f7c4c4}.magok{background:#ffcaca}.museum{background:#5279cf}.folk{background:#b4c9ff}.history{background:#9bb8f5}.war{background:#6b8ddd}
     .filters{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 16px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#fafaf6;font-size:13px}.filters label{display:flex;align-items:center;gap:5px;font-weight:600}.filters input{accent-color:var(--blue)}.external-filter{display:inline-flex;align-items:center;padding:6px 9px;border:1px solid #99f6e4;border-radius:8px;background:#ecfeff;color:#115e59;text-decoration:none;font-weight:700;font-size:12px}.external-filter.hangang{background:#d9f7ef;border-color:#56b89d;color:#0d5c4b}.external-filter.regional{background:#e5f4dc;border-color:#83b85c;color:#285a1b}.filters button{margin-left:auto;border:1px solid var(--line);border-radius:8px;background:#fff;padding:6px 10px;cursor:pointer;font:inherit;font-size:12px}
     .day.today-cell{background:#fff7d6;box-shadow:inset 0 0 0 2px #d49b00;z-index:1}
@@ -37,13 +35,74 @@
     .arrows button:disabled{opacity:.4;cursor:default}
     .filters label,.filters button,.external-filter,.source-links a,.weather-link{min-height:44px;display:inline-flex;align-items:center}
     .filters input{width:20px;height:20px}
-    .event{min-height:44px;touch-action:manipulation;font-family:inherit}
+    .event{display:flex;align-items:flex-start;justify-content:flex-start;min-height:24px;height:auto;padding:4px 6px;white-space:normal;touch-action:manipulation;font-family:inherit}
     button:focus-visible,a:focus-visible,.calendar-scroll:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
-    .side{scroll-margin-top:16px}
+    .side-rail{position:sticky;top:82px;align-self:start;min-width:0;max-height:calc(100vh - 98px);max-height:calc(100dvh - 98px);display:flex;flex-direction:column;gap:12px;overflow-y:auto;overscroll-behavior:contain}
+    .side-rail>.side{position:static;max-height:none;min-height:160px;overflow-y:auto;overscroll-behavior:contain}
+    #filterHome{flex-shrink:0}
+    .side-rail .side{flex:1 1 auto}
+    .filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:0}
+    .filter-header,.filters label:last-of-type{grid-column:1/-1}
+    .filter-header{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .filters label,.filters a{min-width:0}
+    .filters #resetFilters{margin:0;justify-content:center;background:#192015;color:#fff;border:1px solid #192015;font-weight:800;padding:8px 14px;box-shadow:0 2px 4px #19201526}
+    .filters #resetFilters:hover{background:#33432a;border-color:#33432a}
+    .filters #resetFilters:active{background:#10160d;box-shadow:none}
+    .filter-heading{font-size:15px}
+    .filters .weather-link{grid-column:1/-1;justify-content:center;white-space:normal}
+    .mobile-filter-dock,.mobile-agenda,.source-toggle{display:none}
+    #filterDialogContent{padding:16px}
+    #filterDialog .filters{border:0;padding:0;background:transparent}
+    .feature p{color:inherit}
+    #officialLink{display:flex;align-items:center;justify-content:center;min-height:48px;width:100%;padding:12px;border-radius:10px;background:#192015;color:#fff;text-decoration:none;font-weight:700;text-align:center}
+    #officialLink:hover{background:#33432a}
+    .detail-dialog{width:calc(100% - 24px);max-width:520px;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);padding:0;border:1px solid var(--line);border-radius:20px;background:var(--card);color:var(--ink);overflow-y:auto;overscroll-behavior:contain}
+    .detail-dialog::backdrop{background:#10182799}
+    .dialog-toolbar{position:sticky;top:0;z-index:1;display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:var(--card);border-bottom:1px solid var(--line)}
+    .dialog-toolbar button{min-width:64px;min-height:44px;border:1px solid #697167;border-radius:9px;background:white;color:#192015;font:700 14px inherit;cursor:pointer}
+    .detail-dialog .side{position:static;max-height:none;border:0;border-radius:0;overflow:visible;padding:18px 20px max(20px,env(safe-area-inset-bottom))}
+    .detail-dialog .hint{display:none}
     @media(max-width:760px){
+      .source-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:48px;padding:12px 14px;margin:0 0 12px;border:1px solid #697167;border-radius:12px;background:#fafaf6;color:#192015;font:700 14px/1.5 inherit;cursor:pointer;text-align:left}
+      .source-toggle[aria-expanded="false"]+.source-links{display:none}
+      .source-toggle[aria-expanded="true"]+.source-links .label{display:none}
+      .mobile-agenda{display:block}
+      .calendar:not(.month-mode) .calendar-scroll{display:none}
+      .calendar.month-mode #agendaList{display:none}
+      .agenda-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}
+      .agenda-heading h3{font-size:17px;margin:0}
+      #toggleMobileView{min-height:44px;padding:8px;border:1px solid #697167;border-radius:8px;background:white;color:#192015;font:inherit;font-size:13px;flex-shrink:0}
+      #agendaCount{font-size:14px;color:#45513a;line-height:1.5}
+      .agenda-search{margin-top:16px}
+      .agenda-search label{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+      .search-row{display:flex;gap:8px}
+      #agendaSearch{flex:1;min-width:0;min-height:48px;padding:10px;border:1px solid #697167;border-radius:9px;background:white;color:#192015;font:inherit;font-size:16px}
+      #clearAgendaSearch{min-width:60px;min-height:48px;padding:8px;border:1px solid #697167;border-radius:9px;background:#192015;color:white;font:inherit;font-size:14px;cursor:pointer}
+      #clearAgendaSearch:disabled{opacity:.45;cursor:default}
+      #searchScope{font-size:13px;line-height:1.5;color:#45513a;margin:6px 0}
+      .calendar.month-mode .agenda-search,.calendar.month-mode #agendaCount{display:none}
+      .mobile-item{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;width:100%;height:auto;min-height:44px;border:0;text-align:left;margin:0 0 8px;padding:8px 10px;border-radius:10px;cursor:pointer;font:inherit;white-space:normal;overflow-wrap:anywhere}
+      .mobile-item strong{display:block;width:100%;font-size:15px;line-height:1.4;margin:3px 0}
+      .mobile-item span{display:block;width:100%;font-size:13px;line-height:1.4;font-weight:500}
+      .mobile-date-control{min-width:0;flex:1}
+      .mobile-date-control label{display:block;font-size:12px;margin-bottom:3px}
+      #mobileDate{width:100%;min-height:44px;font:inherit;font-size:16px;color:#192015;background:white;border:1px solid #697167;border-radius:8px;padding:6px}
+      .owmoosa-calendar>.owmoosa-home{position:static!important;transform:none!important;align-self:center;margin:8px auto;flex-shrink:0}
+      body.owmoosa-calendar .page{padding-top:16px!important}
+      .detail-dialog .feature p,.detail-dialog .meta{font-size:15px;line-height:1.5}
+      .detail-dialog .feature span{font-size:14px}
       .week,.grid{min-width:700px}
-      .event{font-size:12px}
-      .side{display:block}
+      .event{font-size:11px;min-height:28px}
+      .side-rail{display:none}
+      body.owmoosa-calendar{height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+      .owmoosa-calendar .page{width:100%;min-height:0;flex:1;overflow-y:auto;margin:0 auto;overscroll-behavior-y:contain}
+      .mobile-filter-dock{flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 15px max(8px,env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--line)}
+      .mobile-filter-dock span{font-size:12px;color:#45513a}
+      .mobile-filter-dock button{min-height:48px;padding:10px 16px;border:0;border-radius:10px;background:#192015;color:white;font:700 14px/1.4 inherit;cursor:pointer}
+      .mobile-filter-dock{flex-wrap:wrap;row-gap:6px}
+      .mobile-date-nav{display:flex;gap:8px;flex-basis:100%}
+      .mobile-date-nav button{flex:1;min-width:0;min-height:44px;padding:8px 6px;font:700 14px/1.4 inherit;background:#edf0e8;color:#192015;border:1px solid #697167}
+      .mobile-date-nav button:disabled{opacity:.45;cursor:default}
       .monthbar h2{font-size:20px}
     }
   </style>
@@ -53,12 +112,18 @@
 <a class="owmoosa-home" href="../index.html"><span aria-hidden="true">⌂</span> OWMOOSA 메인으로</a>
   <main class="page">
     <section class="intro"><div><h1>10월의 눈팅</h1><p>이지하고 스근하게 다녀오는</p></div></section>
-    <div class="venue-legend" aria-label="전시장 색상 안내"><span><i class="blue"></i>코엑스</span><span><i class="purple"></i>세텍</span><span><i class="magok"></i>코엑스 마곡</span><span><i class="at"></i>aT센터</span><span><i class="ddp"></i>DDP</span><span><i class="museum"></i>국립중앙박물관</span><span><i class="folk"></i>국립민속박물관</span><span><i class="history"></i>대한민국역사박물관</span><span><i class="war"></i>전쟁기념관</span><span><i class="mmca"></i>국립현대미술관 서울관</span><span><i class="mmcaD"></i>국립현대미술관 덕수궁관</span><span><i class="sema"></i>서울시립미술관 서소문본관</span><span><i class="sejong"></i>세종문화회관</span><span><i class="festival"></i>서울시주관 축제류</span></div>
-    <div class="source-links" aria-label="기관별 공식 전체 일정"><span class="label">공식 일정</span><a href="https://www.coex.co.kr/event/exhibitions-calendar/" target="_blank" rel="noopener">코엑스 ↗</a><a href="https://www.setec.or.kr/front/schedule/calendar.do" target="_blank" rel="noopener">세텍 ↗</a><a href="https://coexmagok.co.kr/event-schedule/calendar/" target="_blank" rel="noopener">코엑스 마곡 ↗</a><a href="https://www.at.or.kr/ac/event/acko311300/calendarList.action" target="_blank" rel="noopener">aT센터 ↗</a><a href="https://ddp.or.kr/index.html?menuno=240" target="_blank" rel="noopener">DDP ↗</a><a href="https://www.sejongpac.or.kr/portal/performance/exhibit/performList.do?menuNo=200558" target="_blank" rel="noopener">세종문화회관 ↗</a><a href="https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?menuId=current" target="_blank" rel="noopener">국립중앙박물관 ↗</a><a href="https://www.nfm.go.kr/user/planexhibition/home/20/selectPlanExhibitionNList.do?planExhibitionGbn=HOME" target="_blank" rel="noopener">국립민속박물관 ↗</a><a href="https://www.much.go.kr/MUCH/contents/M02010100000.do?searchExhDivision=play&schExhCategory=EXH01" target="_blank" rel="noopener">대한민국역사박물관 ↗</a><a href="https://www.warmemo.or.kr/" target="_blank" rel="noopener">전쟁기념관 ↗</a><a href="https://www.mmca.go.kr/exhibitions/progressList.do" target="_blank" rel="noopener">국립현대미술관 ↗</a><a href="https://sema.seoul.go.kr/kr/visit/seosomun" target="_blank" rel="noopener">서울시립미술관 서소문본관 ↗</a><a href="https://festival.seoul.go.kr/festival/year/loadMap.do" target="_blank" rel="noopener">서울시 축제 ↗</a></div>
-    <section class="layout"><div class="calendar"><div class="monthbar"><div class="month-title"><h2>2026년 10월</h2><a class="weather-link" href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9D%B4%EB%B2%88%EC%A3%BC%EB%82%A0%EC%94%A8&ackey=6xzxin6x" target="_blank" rel="noopener">이번주 날씨 ↗</a></div><div class="arrows"><button disabled aria-label="이전 달 자료 없음" title="현재 2026년 10월 자료만 제공됩니다">‹</button><button disabled aria-label="다음 달 자료 없음" title="현재 2026년 10월 자료만 제공됩니다">›</button></div></div><div class="filters" aria-label="전시 유형 필터"><label><input type="checkbox" value="venue" checked>전시관류</label><label><input type="checkbox" value="museum" checked>박물관류</label><label><input type="checkbox" value="art" checked>미술관류</label><label><input type="checkbox" value="festival" checked>서울시주관 축제류</label><a class="external-filter hangang" href="https://hangang.seoul.go.kr/www/eventMng/list.do?srchType=list&evntSn=&mid=538&pageNo=1&keyword=&opt4=&opt11=&opt12=&opt13=&opt14=Y" target="_blank" rel="noopener">한강 관련 축제 ↗</a><a class="external-filter regional" href="https://festival.seoul.go.kr/festival/regional/list.do" target="_blank" rel="noopener">구별 진행 축제 ↗</a><button id="resetFilters" type="button">전체 보기</button></div><div class="calendar-scroll" role="region" aria-label="10월 달력 — 좌우로 스크롤" tabindex="0"><div class="week"><div>일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div></div><div class="grid" id="calendar"></div></div></div>
-      <aside class="side" tabindex="-1" aria-label="선택한 전시 상세정보"><h3 id="sideTitle">선택한 전시</h3><div class="date" id="sideDate">선택한 일정의 시작일</div><div class="feature" id="feature"><span>10월 일정</span><h4>10월의 눈팅</h4><p>일정을 선택하면 상세 정보가 표시됩니다.</p></div><div class="detail"><h4>전시 정보</h4><div class="meta"><span class="icon">◷</span><span id="period">일정을 선택하세요</span></div><div class="meta"><span class="icon">⌖</span><span id="place">코엑스</span></div><div class="meta"><span class="icon">↗</span><a id="officialLink" href="https://www.coex.co.kr/event/exhibitions-calendar/" target="_blank" rel="noopener">공식 페이지 보기</a></div></div><p class="hint">달력의 전시명을 선택하면<br/>해당 전시 정보를 볼 수 있어요.</p></aside>
+    <button class="source-toggle" id="toggleSources" type="button" aria-expanded="false" aria-controls="venueSources"><span>기관별 색상 · 공식 링크</span><span id="sourceToggleText">펼치기 ＋</span></button>
+    <div class="source-links" id="venueSources" aria-label="기관별 색상 안내 및 공식 일정"><span class="label">기관별 색상 · 공식 일정 ↗</span><a class="blue" href="https://www.coex.co.kr/event/exhibitions-calendar/" target="_blank" rel="noopener">코엑스 ↗</a><a class="purple" href="https://www.setec.or.kr/front/schedule/calendar.do" target="_blank" rel="noopener">세텍 ↗</a><a class="magok" href="https://coexmagok.co.kr/event-schedule/calendar/" target="_blank" rel="noopener">코엑스 마곡 ↗</a><a class="at" href="https://www.at.or.kr/ac/event/acko311300/calendarList.action" target="_blank" rel="noopener">aT센터 ↗</a><a class="ddp" href="https://ddp.or.kr/index.html?menuno=240" target="_blank" rel="noopener">DDP ↗</a><a class="sejong" href="https://www.sejongpac.or.kr/portal/performance/exhibit/performList.do?menuNo=200558" target="_blank" rel="noopener">세종문화회관 ↗</a><a class="museum" href="https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?menuId=current" target="_blank" rel="noopener">국립중앙박물관 ↗</a><a class="pink" href="https://www.nfm.go.kr/user/planexhibition/home/20/selectPlanExhibitionNList.do?planExhibitionGbn=HOME" target="_blank" rel="noopener">국립민속박물관 ↗</a><a class="history" href="https://www.much.go.kr/MUCH/contents/M02010100000.do?searchExhDivision=play&schExhCategory=EXH01" target="_blank" rel="noopener">대한민국역사박물관 ↗</a><a class="war" href="https://www.warmemo.or.kr/" target="_blank" rel="noopener">전쟁기념관 ↗</a><a class="mmca" href="https://www.mmca.go.kr/exhibitions/progressList.do" target="_blank" rel="noopener">국립현대미술관 서울관 ↗</a><a class="mmcaD" href="https://www.mmca.go.kr/exhibitions/progressList.do" target="_blank" rel="noopener">국립현대미술관 덕수궁관 ↗</a><a class="sema" href="https://sema.seoul.go.kr/kr/visit/seosomun" target="_blank" rel="noopener">서울시립미술관 서소문본관 ↗</a><a class="festival" href="https://festival.seoul.go.kr/festival/year/loadMap.do" target="_blank" rel="noopener">서울시 축제 ↗</a></div>
+    <section class="layout"><div class="calendar"><div class="monthbar"><div class="month-title"><h2>2026년 10월</h2></div><div class="arrows"><button disabled aria-label="이전 달 자료 없음" title="현재 2026년 10월 자료만 제공됩니다">‹</button><button disabled aria-label="다음 달 자료 없음" title="현재 2026년 10월 자료만 제공됩니다">›</button></div></div><div class="mobile-agenda"><div class="agenda-heading"><h3 id="agendaTitle">선택한 날짜의 행사</h3><button id="toggleMobileView" type="button">월간 달력 보기</button></div><div class="agenda-search"><label for="agendaSearch">행사명·기관명 검색</label><div class="search-row"><input id="agendaSearch" type="search" placeholder="예: 서도호, 코엑스" autocomplete="off" aria-describedby="searchScope" aria-controls="agendaList"><button id="clearAgendaSearch" type="button" disabled>지우기</button></div><p id="searchScope">선택한 날짜와 유형 안에서 검색합니다.</p></div><p id="agendaCount" aria-live="polite"></p><div id="agendaList"></div></div><div class="calendar-scroll" role="region" aria-label="10월 달력 — 좌우로 스크롤" tabindex="0"><div class="week"><div>일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div></div><div class="grid" id="calendar"></div></div></div>
+      <div class="side-rail"><div id="filterHome"><div class="filters" aria-label="전시 유형 필터"><div class="filter-header"><strong class="filter-heading">일정 필터</strong><button id="resetFilters" type="button">전체 보기</button></div><label><input type="checkbox" value="venue" checked>전시관류</label><label><input type="checkbox" value="museum" checked>박물관류</label><label><input type="checkbox" value="art" checked>미술관류</label><label><input type="checkbox" value="festival" checked>서울시주관 축제류</label><a class="external-filter hangang" href="https://hangang.seoul.go.kr/www/eventMng/list.do?srchType=list&evntSn=&mid=538&pageNo=1&keyword=&opt4=&opt11=&opt12=&opt13=&opt14=Y" target="_blank" rel="noopener">한강 관련 축제 ↗</a><a class="external-filter regional" href="https://festival.seoul.go.kr/festival/regional/list.do" target="_blank" rel="noopener">구별 진행 축제 ↗</a><a class="weather-link" href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9D%B4%EB%B2%88%EC%A3%BC%EB%82%A0%EC%94%A8&ackey=6xzxin6x" target="_blank" rel="noopener">이번주 날씨 ↗</a></div></div>
+      <aside class="side" tabindex="-1" aria-label="선택한 전시 상세정보"><h3 id="sideTitle">선택한 전시</h3><div class="date" id="sideDate">선택한 일정의 시작일</div><div class="feature" id="feature"><span>10월 일정</span><h4>10월의 눈팅</h4><p>일정을 선택하면 상세 정보가 표시됩니다.</p></div><div class="detail"><h4>전시 정보</h4><div class="meta"><span class="icon">◷</span><span id="period">일정을 선택하세요</span></div><div class="meta"><span class="icon">⌖</span><span id="place">코엑스</span></div><div class="meta"><span class="icon">↗</span><a id="officialLink" href="https://www.coex.co.kr/event/exhibitions-calendar/" target="_blank" rel="noopener">공식 페이지 보기</a></div></div><p class="hint">달력의 전시명을 선택하면<br/>해당 전시 정보를 볼 수 있어요.</p></aside></div>
     </section>
   </main>
+  <div class="mobile-filter-dock"><div class="mobile-date-control"><label for="mobileDate">날짜 선택</label><select id="mobileDate" aria-controls="agendaList"></select><span id="filterStatus" aria-live="polite">전체 유형 표시 중</span></div><button id="openFilters" type="button" aria-haspopup="dialog" aria-controls="filterDialog">일정 필터 열기</button><div class="mobile-date-nav" aria-label="날짜 빠른 이동"><button id="previousDay" type="button">‹ 이전 날</button><button id="goToday" type="button">오늘</button><button id="nextDay" type="button">다음 날 ›</button></div></div>
+  <dialog class="detail-dialog" id="filterDialog" aria-labelledby="filterTitle"><div class="dialog-toolbar"><strong id="filterTitle">일정 필터</strong><button id="closeFilters" type="button" autofocus>적용 · 닫기</button></div><div id="filterDialogContent"></div></dialog>
+  <dialog class="detail-dialog" id="detailDialog" aria-labelledby="sideTitle">
+    <div class="dialog-toolbar"><strong>일정 상세</strong><button id="closeDetail" type="button" autofocus aria-label="상세 창 닫기">닫기 ×</button></div>
+  </dialog>
   <script>
     // 2026년 10월: 기관별 공식 일정의 실제 기간을 보존하고, 달력에는 10월분만 표시한다.
     const events=[];
@@ -91,6 +156,7 @@
     ]);
     addEvents('세텍',[
       ['2026-10-03','2026-10-04','디. 페스타'],
+      ['2026-10-08','2026-10-11','2026 서울가구쇼'],
       ['2026-10-15','2026-10-18','뱅크아트페어 Plus'],
       ['2026-10-23','2026-10-25','서울네일엑스포'],
       ['2026-10-29','2026-10-31','2026 코리아 러닝엑스포']
@@ -192,7 +258,6 @@
     ]);
     const venueColors={'코엑스':'blue','킨텍스':'orange','세텍':'purple','코엑스 마곡':'magok','aT센터':'at','DDP':'ddp','세종문화회관':'sejong','국립중앙박물관':'museum','국립민속박물관':'pink','대한민국역사박물관':'history','전쟁기념관':'war','국립현대미술관':'mmca','국립현대미술관 덕수궁관':'mmcaD','서울시립미술관 서소문본관':'sema'};
     const venueLinks={'코엑스':'https://www.coex.co.kr/event/exhibitions-calendar/','킨텍스':'https://www.kintex.com/web/ko/event/clist.do?searchType=11','세텍':'https://www.setec.or.kr/front/schedule/calendar.do','코엑스 마곡':'https://coexmagok.co.kr/event-schedule/calendar/','aT센터':'https://www.at.or.kr/ac/event/acko311300/calendarList.action','DDP':'https://ddp.or.kr/index.html?menuno=240','세종문화회관':'https://www.sejongpac.or.kr/portal/performance/exhibit/performList.do?menuNo=200558','국립중앙박물관':'https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?menuId=current','국립민속박물관':'https://www.nfm.go.kr/user/planexhibition/home/20/selectPlanExhibitionNList.do?planExhibitionGbn=HOME','대한민국역사박물관':'https://www.much.go.kr/MUCH/contents/M02010100000.do?searchExhDivision=play&schExhCategory=EXH01','전쟁기념관':'https://www.warmemo.or.kr/','국립현대미술관':'https://www.mmca.go.kr/exhibitions/progressList.do','국립현대미술관 덕수궁관':'https://www.mmca.go.kr/exhibitions/progressList.do','서울시립미술관 서소문본관':'https://sema.seoul.go.kr/kr/visit/seosomun','서울시주관 축제류':'https://festival.seoul.go.kr/festival/year/loadMap.do'};
-    const venueBackgrounds={'코엑스':'#ef9a9a','킨텍스':'#d95c62','세텍':'#f7c4c4','코엑스 마곡':'#ffcaca','aT센터':'#fde68a','DDP':'#fecdd3','세종문화회관':'#bfdbfe','국립중앙박물관':'#dbeafe','국립민속박물관':'#b4c9ff','대한민국역사박물관':'#9bb8f5','전쟁기념관':'#6b8ddd','국립현대미술관':'#bfdbfe','국립현대미술관 덕수궁관':'#dbeafe','서울시립미술관 서소문본관':'#bae6fd','서울시주관 축제류':'#bbf7d0'};
     const museumVenues=['국립중앙박물관','국립민속박물관','대한민국역사박물관','전쟁기념관'];
     const artVenues=['국립현대미술관','국립현대미술관 덕수궁관','서울시립미술관 서소문본관','세종문화회관'];
     const coexLinks={
@@ -221,7 +286,76 @@
     const venueNotes={'서울시립미술관 서소문본관':'10월 12·19·26일(월) 휴관, 5일(월·대체공휴일)은 정상 개관입니다.','전쟁기념관':'매주 월요일 정기휴관(월요일 포함 연휴는 다음날 휴관), 10월 6일(화) 휴관입니다.'};
     events.filter(event=>festivalLinks[event.n]).forEach(event=>event.link='https://festival.seoul.go.kr/festival/main/festivalView.do?festacode='+festivalLinks[event.n]);
     events.forEach(event=>{event.c=venueColors[event.venue]||'festival';event.hasDetailLink=Boolean(event.link);event.link=event.link||venueLinks[event.venue];event.category=event.venue==='서울시주관 축제류'?'festival':museumVenues.includes(event.venue)?'museum':artVenues.includes(event.venue)?'art':'venue'});
+    // Keep official source titles for search and link matching; shorten displayed titles only.
+    events.forEach(event=>{event.displayName=event.n.replace(/《[^》]*》/g,'').replace(/\s+/g,' ').trim()||event.n});
     const grid=document.querySelector('#calendar');
+    const side=document.querySelector('.side');
+    const detailHome=side.parentElement;
+    const detailDialog=document.querySelector('#detailDialog');
+    const closeDetail=document.querySelector('#closeDetail');
+    const mobileDetails=matchMedia('(max-width:760px)');
+    const toggleSources=document.querySelector('#toggleSources');
+    toggleSources.onclick=()=>{
+      const expanded=toggleSources.getAttribute('aria-expanded')!=='true';
+      toggleSources.setAttribute('aria-expanded',String(expanded));
+      document.querySelector('#sourceToggleText').textContent=expanded?'접기 −':'펼치기 ＋';
+    };
+    const filters=document.querySelector('.filters');
+    const filterHome=document.querySelector('#filterHome');
+    const filterDialog=document.querySelector('#filterDialog');
+    const filterContent=document.querySelector('#filterDialogContent');
+    const openFilters=document.querySelector('#openFilters');
+    const closeFilters=document.querySelector('#closeFilters');
+    openFilters.onclick=()=>{
+      if(!mobileDetails.matches||filterDialog.open)return;
+      filterContent.append(filters);
+      filterDialog.showModal();
+      closeFilters.focus({preventScroll:true});
+    };
+    closeFilters.onclick=()=>filterDialog.close();
+    filterDialog.addEventListener('close',()=>{
+      filterHome.append(filters);
+      if(mobileDetails.matches)openFilters.focus({preventScroll:true});
+    });
+    filterDialog.addEventListener('click',e=>{
+      if(e.target!==filterDialog)return;
+      const rect=filterDialog.getBoundingClientRect();
+      if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)filterDialog.close();
+    });
+    let initializing=true, detailTrigger=null, savedScroll=0, savedBodyStyle='';
+    const openDetails=button=>{
+      side.scrollTop=0;
+      if(!mobileDetails.matches||initializing)return;
+      detailTrigger=button;
+      if(detailDialog.open)return;
+      savedScroll=window.scrollY;
+      savedBodyStyle=document.body.style.cssText;
+      document.body.style.position='fixed';
+      document.body.style.top=-savedScroll+'px';
+      document.body.style.width='100%';
+      detailDialog.append(side);
+      detailDialog.showModal();
+      detailDialog.scrollTop=0;
+      closeDetail.focus({preventScroll:true});
+    };
+    detailDialog.addEventListener('close',()=>{
+      detailHome.append(side);
+      document.body.style.cssText=savedBodyStyle;
+      window.scrollTo({top:savedScroll,behavior:'instant'});
+      detailTrigger?.focus({preventScroll:true});
+    });
+    closeDetail.onclick=()=>detailDialog.close();
+    detailDialog.addEventListener('click',e=>{
+      if(e.target!==detailDialog)return;
+      const rect=detailDialog.getBoundingClientRect();
+      if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)detailDialog.close();
+    });
+    mobileDetails.addEventListener('change',()=>{
+      if(!mobileDetails.matches){
+        if(detailDialog.open)detailDialog.close();
+        if(filterDialog.open)filterDialog.close();
+      }
+    });
     const todayParts=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Seoul',year:'numeric',month:'numeric',day:'numeric'}).formatToParts(new Date()).filter(p=>p.type!=='literal').map(p=>[p.type,Number(p.value)]));
     const isKoreaToday=todayParts.year===2026&&todayParts.month===10;
     const initialDay=isKoreaToday?todayParts.day:1;
@@ -233,32 +367,112 @@
       events.forEach((event,index)=>{
         if(d<event.d||d>event.end||(event.days&&!event.days.includes(d)))return;
         const button=document.createElement('button');button.className='event '+event.c;button.dataset.index=index;button.dataset.category=event.category;
-        const label=document.createElement('span');label.className='event-name';label.textContent=event.n;button.append(label);day.append(button);
+        const label=document.createElement('span');label.className='event-name';label.textContent=event.displayName;button.append(label);day.append(button);
       });
       grid.append(day);
     }
     document.querySelectorAll('.event').forEach(button=>{
-      button.type='button';const event=events[Number(button.dataset.index)];button.title=event.n;
+      button.type='button';const event=events[Number(button.dataset.index)];button.title=event.displayName;
       button.onclick=(e)=>{
         e.preventDefault();e.stopPropagation();
         document.querySelectorAll('.chosen').forEach(x=>x.classList.remove('chosen'));button.parentElement.classList.add('chosen');
         document.querySelector('#sideTitle').textContent='선택한 일정';
         document.querySelector('#sideDate').textContent=event.actual[0]+' 시작';
-        document.querySelector('#feature h4').textContent=event.n;
-        document.querySelector('#feature').style.background=venueBackgrounds[event.venue];
+        document.querySelector('#feature h4').textContent=event.displayName;
+        document.querySelector('#feature').className='feature '+event.c;
         document.querySelector('#feature p').textContent=event.days?'10월에는 4·11·18·25일(일)에 열립니다.':event.venue+' 공식 일정의 전체 기간입니다. '+(venueNotes[event.venue]||'휴관일·세부 운영시간은 공식 안내를 확인하세요.');
         document.querySelector('#feature span').textContent=event.actual.join(' — ');
         document.querySelector('#period').textContent=event.actual.join(' — ');
         document.querySelector('#place').textContent=event.venue;
         document.querySelector('#officialLink').href=event.link;
         document.querySelector('#officialLink').textContent=event.hasDetailLink?'공식 행사 상세 보기':'기관 공식 일정 보기';
-        if(matchMedia('(max-width:760px)').matches){const side=document.querySelector('.side');side.focus({preventScroll:true});side.scrollIntoView({block:'start',behavior:'instant'})}
+        if(!initializing&&mobileDetails.matches&&monthMode){
+          agendaDay=Number(button.parentElement.children[0].textContent);
+          mobileDate.value=String(agendaDay);
+          renderMobileAgenda();
+        }
+        openDetails(button);
       };
     });
     (document.querySelector('.today-cell .event')||document.querySelector('.day.chosen .event')||document.querySelector('.event'))?.click();
-    const filterBoxes=[...document.querySelectorAll('.filters input')]; const applyFilters=()=>{const active=filterBoxes.filter(x=>x.checked).map(x=>x.value);document.querySelectorAll('.event').forEach(b=>b.style.display=active.includes(b.dataset.category)?'block':'none')}; filterBoxes.forEach(x=>x.addEventListener('change',applyFilters)); document.querySelector('#resetFilters').onclick=()=>{filterBoxes.forEach(x=>x.checked=true);applyFilters()};
+    initializing=false;
+    const filterBoxes=[...document.querySelectorAll('.filters input')];
+    const applyFilters=()=>{
+      const active=filterBoxes.filter(x=>x.checked).map(x=>x.value);
+      document.querySelectorAll('.event').forEach(b=>b.style.display=active.includes(b.dataset.category)?'flex':'none');
+      document.querySelector('#filterStatus').textContent=active.length===4?'전체 유형 표시 중':active.length===0?'선택된 유형 없음':active.length+'개 유형 표시 중';
+      renderMobileAgenda();
+    };
+    filterBoxes.forEach(x=>x.addEventListener('change',applyFilters));
+    document.querySelector('#resetFilters').onclick=()=>{filterBoxes.forEach(x=>x.checked=true);applyFilters()};
     const conciseName = name => name.replace(/\b20\d{2}년?\s*/g,'').replace(/제\s*\d+\s*회\s*/g,'').replace(/서울|SEOUL|KOREA/gi,'').replace(/\s+/g,' ').trim();
     document.querySelectorAll('.event-name').forEach(label=>{label.textContent=conciseName(label.textContent)});
+    const mobileDate=document.querySelector('#mobileDate');
+    const previousDay=document.querySelector('#previousDay');
+    const nextDay=document.querySelector('#nextDay');
+    const goToday=document.querySelector('#goToday');
+    goToday.disabled=!isKoreaToday;
+    goToday.title=isKoreaToday?'오늘 날짜로 이동':'2026년 10월 일정만 제공되어 오늘로 이동할 수 없습니다.';
+    const agendaList=document.querySelector('#agendaList');
+    const agendaSearch=document.querySelector('#agendaSearch');
+    const clearAgendaSearch=document.querySelector('#clearAgendaSearch');
+    const normalizeSearch=text=>text.normalize('NFKC').toLocaleLowerCase('ko-KR').replace(/\s+/g,'');
+    agendaSearch.addEventListener('input',()=>renderMobileAgenda());
+    clearAgendaSearch.onclick=()=>{
+      agendaSearch.value='';renderMobileAgenda();agendaSearch.focus({preventScroll:true});
+    };
+    let agendaDay=initialDay, monthMode=false;
+    for(let d=1;d<=31;d++){
+      const option=document.createElement('option');option.value=String(d);
+      option.textContent='10월 '+d+'일 ('+'일월화수목금토'[new Date(2026,9,d).getDay()]+')';
+      mobileDate.append(option);
+    }
+    mobileDate.value=String(agendaDay);
+    function renderMobileAgenda(){
+      previousDay.disabled=agendaDay===1;
+      nextDay.disabled=agendaDay===31;
+      const active=filterBoxes.filter(x=>x.checked).map(x=>x.value);
+      const query=normalizeSearch(agendaSearch.value);
+      clearAgendaSearch.disabled=agendaSearch.value.length===0;
+      const matching=events.map((event,index)=>({event,index})).filter(({event})=>agendaDay>=event.d&&agendaDay<=event.end&&(!event.days||event.days.includes(agendaDay))&&active.includes(event.category)&&(!query||normalizeSearch(event.n+' '+event.venue).includes(query)));
+      document.querySelector('#agendaTitle').textContent='10월 '+agendaDay+'일 ('+'일월화수목금토'[new Date(2026,9,agendaDay).getDay()]+')';
+      document.querySelector('#agendaCount').textContent=matching.length?(query?'검색 결과 ':'')+matching.length+'개 일정 · 행사를 누르면 상세 정보를 볼 수 있어요.':query?'선택한 날짜·유형에 검색 결과가 없습니다. 검색어를 지우거나 날짜·필터를 변경해 주세요.':'표시할 일정이 없습니다. 필터에서 다른 유형을 선택하거나 전체 보기를 눌러 주세요.';
+      agendaList.replaceChildren();
+      matching.forEach(({event,index})=>{
+        const button=document.createElement('button');button.type='button';button.className='feature mobile-item '+event.c;button.dataset.index=index;
+        const venue=document.createElement('span');venue.textContent=event.venue;
+        const title=document.createElement('strong');title.textContent=event.displayName;
+        const period=document.createElement('span');period.textContent=event.actual.join(' — ');
+        button.append(venue);button.append(title);button.append(period);
+        button.onclick=()=>{
+          const source=[...document.querySelectorAll('.event')].find(b=>Number(b.dataset.index)===index&&Number(b.parentElement.children[0].textContent)===agendaDay);
+          source.click();detailTrigger=button;
+        };
+        agendaList.append(button);
+      });
+    }
+    const selectAgendaDay=day=>{
+      if(!Number.isInteger(day)||day<1||day>31)return;
+      agendaDay=day;mobileDate.value=String(day);monthMode=false;
+      if(mobileDetails.matches){
+        document.querySelectorAll('.chosen').forEach(x=>x.classList.remove('chosen'));
+        grid.children[day+3].classList.add('chosen');
+      }
+      document.querySelector('.calendar').classList.remove('month-mode');
+      document.querySelector('#toggleMobileView').textContent='월간 달력 보기';
+      renderMobileAgenda();
+      if(mobileDetails.matches)document.querySelector('.mobile-agenda').scrollIntoView({block:'start',behavior:'instant'});
+    };
+    mobileDate.addEventListener('change',()=>selectAgendaDay(Number(mobileDate.value)));
+    previousDay.onclick=()=>selectAgendaDay(agendaDay-1);
+    nextDay.onclick=()=>selectAgendaDay(agendaDay+1);
+    goToday.onclick=()=>{if(isKoreaToday)selectAgendaDay(todayParts.day)};
+    document.querySelector('#toggleMobileView').onclick=()=>{
+      monthMode=!monthMode;
+      document.querySelector('.calendar').classList[monthMode?'add':'remove']('month-mode');
+      document.querySelector('#toggleMobileView').textContent=monthMode?'날짜별 목록 보기':'월간 달력 보기';
+    };
+    renderMobileAgenda();
   </script>
 </body>
 </html>
