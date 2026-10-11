@@ -1,0 +1,7 @@
+Background generated with the built-in image_gen tool.
+Output: assets/armory/shop.png
+Web-optimized copy: assets/armory/shop.webp
+Weapon artwork: user-supplied originals, preserved in assets/armory/*.png; WebP copies used in the carousel.
+
+Final background prompt:
+Create a photoreal cinematic 16:9 background of a medieval dark fantasy weapons merchant shop for a gladiator's equipment selection screen. No central weapon, no people, no text or labels. Dark ancient stone vault, gothic pointed arches, worn heavy oak beams, subtly visible weapon racks far along both edges, candles on left and right with amber practical illumination, a wide aged oak counter along the bottom edge, center wall deep shadow and nearly empty to allow overlay of five large portrait equipment cards. Exceptionally detailed real stone iron wood textures, atmospheric dust barely visible, deep charcoal and umber palette, muted antique gold, restrained realistic lighting, no purple neon, no cartoon or pixel art. Luxurious dark fantasy film set photographed on full-frame 35mm camera. Center must remain uncluttered.

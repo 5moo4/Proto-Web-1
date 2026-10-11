@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100e0b">
+<title>검투사의 무기고 — OWMOOSA</title>
+<link rel="stylesheet" href="./owmoosa-armory.css?v=14">
+<script src="./owmoosa-frost.js?v=14" defer></script>
+<script src="./owmoosa-flame.js?v=14" defer></script>
+<script src="./owmoosa-lightning.js?v=14" defer></script>
+<script src="./owmoosa-tempest.js?v=14" defer></script>
+<script src="./owmoosa-venom.js?v=14" defer></script>
+<script src="./owmoosa-spectral.js?v=14" defer></script>
+<script src="./owmoosa-armory.js?v=14" defer></script>
+</head>
+<body>
+<div class="shop" aria-hidden="true"></div><div class="atmosphere" aria-hidden="true"></div>
+<header class="masthead">
+<a class="back" href="./index.html#project4"><span aria-hidden="true">←</span> 갤러리</a>
+<div class="wordmark"><span class="crest" aria-hidden="true">⚔</span><span>BLACKTHORN<small>ARMS &amp; ENCHANTMENTS</small></span></div>
+<button class="sound" type="button" aria-pressed="true">소리 켜짐 <span aria-hidden="true">♫</span></button>
+</header>
+<main>
+<div class="intro"><p class="eyebrow">THE GLADIATOR’S ARMORY</p><h1>운명을 가를 검을 고르세요</h1><p class="intro-copy">문 너머는 결투장. 당신의 손에 남을 마법은 하나.</p></div>
+<section class="weapon-stage" aria-label="마법 속성검 선택" aria-roledescription="캐러셀" tabindex="0">
+<div class="floor-rune" aria-hidden="true"></div>
+<div class="cards"></div>
+<button class="arrow previous" type="button" aria-label="이전 무기"><span aria-hidden="true">‹</span></button>
+<button class="arrow next" type="button" aria-label="다음 무기"><span aria-hidden="true">›</span></button>
+</section>
+<section class="details" aria-label="현재 무기">
+<div class="weapon-tag"><span id="element">서리</span><span class="separator">/</span><span>마법 장검</span></div>
+<h2 id="weapon-name">서리의 맹세</h2>
+<p class="lore" id="weapon-lore">얼어붙은 맹세는 꺾이지 않는다. 검 끝에 닿은 적의 기세를 늦춘다.</p>
+<div class="traits"><span id="trait-one">냉기 · 둔화</span><i aria-hidden="true"></i><span id="trait-two">절제된 일격</span></div>
+<button class="equip" type="button"><span aria-hidden="true">◇</span> 이 검을 선택하기 <span aria-hidden="true">◇</span></button>
+<p class="selection" role="status" aria-live="polite"></p>
+</section>
+</main>
+<footer><span class="footer-note">57 BLADES. ONE FATE.</span><div class="armory-navigation"><div class="collection-index"><span id="weapon-counter">01 / 57</span><select id="weapon-jump" aria-label="무기 목록에서 바로 선택"></select></div><nav class="pagination" aria-label="무기 바로 선택"></nav></div><span class="hint">← → 방향키 <span>·</span> 드래그하여 탐색</span></footer>
+<div class="sr-only" id="announcement" aria-live="polite" aria-atomic="true"></div>
+<noscript><p class="no-script">무기 선택 기능을 이용하려면 JavaScript를 켜 주세요.</p></noscript>
+</body>
+</html>

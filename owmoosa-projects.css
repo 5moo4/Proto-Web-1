@@ -411,3 +411,7 @@
 /* Project 03: Higgsfield field guide. */
 .higgsfield-art{display:flex;flex-direction:column;justify-content:center;gap:8px;background:#d7f99b;color:#24351d}.higgsfield-art b{font:600 32px monospace}.higgsfield-art small{font:7px monospace;letter-spacing:.06em}
 .frame .project-grid>.project-card:last-child:nth-child(odd){grid-column:1 / -1;max-width:373px}
+
+/* Interactive gallery, work 03. */
+.gravity-heading{margin-top:28px!important}.gravity-post-art{background:url("./assets/armory/frost.webp") center 38%/cover}.gravity-post-card:hover{background:#102831e8;border-color:#a6e9ff}
+
