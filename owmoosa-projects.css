@@ -415,3 +415,49 @@
 /* Interactive gallery, work 03. */
 .gravity-heading{margin-top:28px!important}.gravity-post-art{background:url("./assets/armory/frost.webp") center 38%/cover}.gravity-post-card:hover{background:#102831e8;border-color:#a6e9ff}
 
+
+/* Keep every project discoverable and reserve a separate area for fixed navigation. */
+.frame.is-inside[data-space="project4"] > .inside {
+  bottom: max(174px, calc(env(safe-area-inset-bottom) + 158px)) !important;
+  padding-bottom: 24px !important;
+  scrollbar-gutter: stable;
+}
+.frame[data-space="project4"] .project4-posts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  width: min(100%, 1060px);
+}
+.interactive-project { min-width: 0; }
+.interactive-project .shelf-heading { margin: 0 0 12px !important; }
+.interactive-project .storm-post-card {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  height: calc(100% - 26px);
+  padding: 18px;
+}
+.interactive-project .storm-post-art { min-height: 135px; border-radius: 4px; }
+.interactive-project .storm-post-card strong { font-size: 19px; }
+@media(max-width:700px) {
+  .frame.is-inside[data-space="project4"] > .inside {
+    padding-top: 28px !important;
+    gap: 22px;
+  }
+  .frame[data-space="project4"] .inside-copy h2 { font-size: 34px; }
+  .frame[data-space="project4"] .project4-posts { grid-template-columns: 1fr; gap: 18px; }
+  .interactive-project .shelf-heading { margin-bottom: 7px !important; }
+  .interactive-project .storm-post-card {
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px;
+    height: auto;
+  }
+  .interactive-project .storm-post-art { min-height: 76px; }
+  .interactive-project .storm-post-card strong { font-size: 17px; margin: 7px 0; }
+  .interactive-project .storm-post-card small { font-size: 8px; }
+}
+@media(min-width:701px) and (max-height:700px) {
+  .frame.is-inside[data-space="project4"] > .inside { padding-top: 28px !important; gap: 20px; }
+  .frame[data-space="project4"] .inside-copy h2 { font-size: 40px; }
+  .interactive-project .storm-post-art { min-height: 85px; }
+}
