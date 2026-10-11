@@ -461,3 +461,5 @@
   .frame[data-space="project4"] .inside-copy h2 { font-size: 40px; }
   .interactive-project .storm-post-art { min-height: 85px; }
 }
+
+.vocabulary-art{display:flex;flex-direction:column;justify-content:center;gap:8px;background:linear-gradient(135deg,#152c31,#25203c);color:#acf2e4;border:1px solid #77cfc755}.vocabulary-art b{font:32px Consolas,monospace;color:#acf2e4}.vocabulary-art small{font:7px Consolas,monospace;letter-spacing:.05em}

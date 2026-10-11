@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>프론트엔드단어장</title>
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./cyber-theme.css">
+<link rel="stylesheet" href="./titanium-theme.css">
+<meta name="theme-color" content="#090d0f">
+</head>
+<body>
+<main>
+<a href="../ai-service-vocabulary/index.html" style="display:inline-block;margin-bottom:18px;color:#c8d8df;font-size:12px;text-decoration:none">← AI 서비스 만들기 단어장</a>
+<nav class="vocabulary-nav" aria-label="단어장 선택"><a href="../ui-vocabulary/index.html" aria-current="page">프론트엔드단어장</a><a href="../backend-vocabulary/index.html">백엔드단어장</a><a href="../infra-vocabulary/index.html">배포·인프라단어장</a><a href="../ai-vocabulary/index.html">AI연동단어장</a></nav>
+<header class="atlas-header">
+<div class="atlas-title"><span class="atlas-eyebrow">AI / INTERFACE ATLAS</span><h1>프론트엔드<span>단어장</span></h1><span class="atlas-count">65 UI MODULES</span></div>
+<div class="core-caption" aria-hidden="true"><span>NEURAL INTERFACE</span><span>CORE / 01</span></div>
+</header>
+<div class="grid">
+<section class="card">
+<div class="demo">
+<button class="primary" id="push" aria-live="polite">눌러보기</button>
+</div>
+<div class="name">버튼<small>Button</small>
+</div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><button class="icon-button-demo" id="icon-search" aria-label="검색 열기"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></button><input class="text" id="icon-search-field" type="search" aria-label="아이콘 버튼 예시 검색" placeholder="검색어 입력" hidden></div></div>
+  <div class="name">아이콘 버튼<small>Icon Button</small></div>
+</section>
+<section class="card">
+  <div class="demo"><a class="demo-link" href="#card-example">카드 예시로 이동 →</a></div>
+  <div class="name">링크<small>Link</small></div>
+</section>
+<section class="card">
+<div class="demo">
+<input class="text" type="text" aria-label="텍스트 입력" placeholder="여기에 입력해 보세요" maxlength="100">
+</div>
+<div class="name">텍스트 필드<small>Text Field</small>
+</div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack search-demo">
+    <input class="text" id="search" type="search" placeholder="과일 검색" aria-label="과일 검색">
+    <div class="mini-panel" id="search-result" role="status">사과 · 바나나 · 포도</div>
+  </div></div>
+  <div class="name">검색창<small>Search Field</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="mini-app"><div class="mini-appbar"><button id="appbar-back" aria-label="예시 홈 화면">‹</button><strong>내 앱</strong><button id="appbar-search" aria-label="예시 검색 화면">⌕</button></div><div class="appbar-body" id="appbar-body"><span>홈 화면</span></div></div></div>
+  <div class="name">앱 바<small>App Bar</small></div>
+</section>
+<section class="card" id="card-example" tabindex="-1">
+  <div class="demo"><article class="content-card"><div class="content-art" aria-hidden="true">⛰</div><div class="content-card-footer"><span>주말 산책 코스</span><button class="soft" id="save-card" aria-pressed="false" aria-label="산책 코스 저장">♡</button></div></article></div>
+  <div class="name">카드<small>Card</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact"><ul class="image-list" aria-label="풍경 이미지 목록"><li><button data-image="숲" aria-label="숲 이미지 선택"><svg viewBox="0 0 240 140" aria-hidden="true"><use href="#landscape-art"></use></svg></button></li><li><button data-image="바다" aria-label="바다 이미지 선택"><svg viewBox="0 0 240 140" aria-hidden="true"><use href="#sea-art"></use></svg></button></li><li><button data-image="노을" aria-label="노을 이미지 선택"><svg viewBox="0 0 240 140" aria-hidden="true"><use href="#sunset-art"></use></svg></button></li></ul><span class="status" id="image-list-status" role="status">사진을 선택해 보세요</span></div></div>
+  <div class="name">이미지 목록<small>Image List</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact"><div class="masonry-demo" id="masonry-demo" aria-label="높이가 다른 이미지 목록"><svg viewBox="0 0 240 140" role="img" aria-label="숲"><use href="#landscape-art"></use></svg><svg viewBox="0 0 240 140" role="img" aria-label="바다"><use href="#sea-art"></use></svg><svg viewBox="0 0 240 140" role="img" aria-label="노을"><use href="#sunset-art"></use></svg><svg viewBox="0 0 240 140" role="img" aria-label="산"><use href="#landscape-art"></use></svg></div><button class="soft" id="masonry-change">높이 바꾸기</button></div></div>
+  <div class="name">메이슨리<small>Masonry</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact"><ul class="item-list"><li><button data-list-item="배송 조회"><span aria-hidden="true">▣</span>배송 조회<span aria-hidden="true">›</span></button></li><li><button data-list-item="주문 내역"><span aria-hidden="true">▤</span>주문 내역<span aria-hidden="true">›</span></button></li></ul><span class="status" id="list-status" role="status">항목을 선택해 보세요</span></div></div>
+  <div class="name">리스트 항목<small>List Item</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack"><div class="divider-preview" id="divider-preview"><span>프로필</span><div role="separator" aria-orientation="horizontal" id="divider-line"></div><span>설정</span></div><button class="soft" id="divider-toggle">세로로 보기</button></div></div>
+  <div class="name">구분선<small>Divider</small></div>
+</section>
+<section class="card">
+<div class="demo">
+<div class="stack">
+<label>
+<input type="checkbox">사과</label>
+<label>
+<input type="checkbox">바나나</label>
+</div>
+</div>
+<div class="name">체크박스<small>Checkbox</small>
+</div>
+</section>
+<section class="card">
+<div class="demo">
+<select aria-label="색상 선택">
+<option value="" disabled selected>색상 선택</option>
+<option>초록색</option>
+<option>파란색</option>
+<option>노란색</option>
+</select>
+</div>
+<div class="name">셀렉트<small>Select</small>
+</div>
+</section>
+<section class="card">
+<div class="demo">
+<div class="stack">
+<label>
+<input type="radio" name="size" checked>작게</label>
+<label>
+<input type="radio" name="size">크게</label>
+</div>
+</div>
+<div class="name">라디오 버튼<small>Radio Button</small>
+</div>
+</section>
+<section class="card">
+<div class="demo">
+<div class="tabs">
+<div class="tabbar" role="tablist" aria-label="콘텐츠 선택">
+<button role="tab" id="tab1" aria-controls="panel" aria-selected="true">사진</button>
+<button role="tab" id="tab2" aria-controls="panel" aria-selected="false" tabindex="-1">영상</button>
+</div>
+<div class="panel" id="panel" role="tabpanel" aria-labelledby="tab1" tabindex="0">사진 모음</div>
+</div>
+</div>
+<div class="name">탭<small>Tabs</small>
+</div>
+</section>
+<section class="card">
+<div class="demo">
+<button class="primary" id="open-modal">창 열기</button>
+</div>
+<div class="name">모달 대화상자<small>Modal Dialog</small>
+</div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact"><div class="mini-app backdrop-preview"><span>뒤쪽 화면</span><div class="sample-backdrop" id="sample-backdrop" hidden><button id="close-backdrop" class="soft">닫기</button></div></div><button class="soft" id="open-backdrop">배경 가리기</button></div></div>
+  <div class="name">배경 가림막<small>Backdrop</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact disclosure-demo">
+    <button class="soft" id="action-trigger" aria-expanded="false" aria-controls="action-list">더보기 ···</button>
+    <div class="action-list" id="action-list" hidden><button data-action="복제">복제하기</button><button data-action="보관">보관하기</button></div>
+    <span class="status" id="action-status" role="status">문서 작업</span>
+  </div></div><div class="name">드롭다운 메뉴<small>Dropdown Menu</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><div class="button-group" role="group" aria-label="예시 문서 작업"><button data-document-action="저장">저장</button><button data-document-action="복제">복제</button><button data-document-action="공유">공유</button></div><span class="status" id="group-status" role="status">문서 작업을 선택해 보세요</span></div></div>
+  <div class="name">버튼 그룹<small>Button Group</small></div>
+</section>
+<section class="card">
+<div class="demo">
+<div class="center">
+<button class="switch" role="switch" aria-checked="false" aria-label="스위치 켜기 및 끄기" id="switch">
+</button>
+<span class="status" id="switch-status">OFF</span>
+</div>
+</div>
+<div class="name">토글 스위치<small>Switch</small>
+</div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><button class="toggle-example" id="bookmark-toggle" aria-label="북마크" aria-pressed="false">☆</button><span class="status" id="bookmark-status" role="status">저장 안 됨</span></div></div>
+  <div class="name">토글 버튼<small>Toggle Button</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><button class="avatar" id="avatar-demo" aria-label="프로필 이미지 바꾸기">민</button><span class="status">눌러서 프로필 변경</span></div></div>
+  <div class="name">아바타<small>Avatar</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><button class="badge-button soft" id="notification-demo" aria-label="알림 3개, 눌러서 모두 읽기"><span aria-hidden="true">🔔</span> 알림 <span class="badge" id="notification-count" aria-hidden="true">3</span></button><span class="status" id="notification-status" aria-live="polite">읽지 않은 알림 3개</span><button class="text-button" id="reset-notifications">알림 다시 받기</button></div></div>
+  <div class="name">알림 배지<small>Badge</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="password-field"><input class="text" id="password-demo" type="password" value="sample123" aria-label="예시 비밀번호" autocomplete="off" spellcheck="false"><button id="toggle-password" aria-controls="password-demo" aria-pressed="false" aria-label="비밀번호 표시">보기</button></div></div>
+  <div class="name">비밀번호 입력창<small>Password Input</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack"><textarea id="message-demo" aria-label="예시 메시지" placeholder="여러 줄로 입력해 보세요" rows="3" maxlength="100"></textarea><span class="character-count" id="message-count">0 / 100</span></div></div>
+  <div class="name">여러 줄 입력창<small>Text Area</small></div>
+</section>
+<section class="card">
+  <div class="demo"><form class="stack compact" id="validation-demo" novalidate><input class="text" id="email-demo" type="email" placeholder="name@example.com" aria-label="예시 이메일" aria-describedby="email-status" required><span class="field-feedback" id="email-status" role="status">이메일 형식을 확인해 보세요</span><button class="soft" type="submit">확인</button></form></div>
+  <div class="name">폼 유효성 검사<small>Form Validation</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center">
+    <button class="primary" id="show-toast">저장하기</button>
+    <div class="toast-slot" role="status"><span class="toast" id="toast" hidden>✓ 저장했어요</span></div>
+  </div></div>
+  <div class="name">토스트 알림<small>Toast</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact center"><span class="sample-copy" id="snack-item" role="status">메모 1개</span><button class="soft" id="snack-delete">메모 삭제</button><div class="snack-slot"><div class="snackbar-demo" id="snackbar-demo" hidden><span role="status">삭제했어요</span><button id="snack-undo">되돌리기</button></div></div></div></div>
+  <div class="name">스낵바<small>Snackbar</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="tooltip-wrap">
+    <button class="soft" id="tooltip-trigger" aria-describedby="tooltip">도움말 ⓘ</button>
+    <span class="tooltip" id="tooltip" role="tooltip" hidden>잠깐 보이는 설명이에요.</span>
+  </div></div>
+  <div class="name">툴팁<small>Tooltip</small></div>
+</section>
+<section class="card">
+<div class="demo">
+<details>
+<summary>펼쳐보기</summary>
+<p>숨겨진 내용이<br>여기에 나타나요.</p>
+</details>
+</div>
+<div class="name">아코디언<small>Accordion</small>
+</div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><div class="spinner-slot"><span class="spinner" id="spinner" aria-hidden="true"></span><span id="spinner-status" role="status">로딩 모양 예시</span></div><button class="soft" id="load-spinner">내용 불러오기</button></div></div>
+  <div class="name">로딩 스피너<small>Spinner</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack"><div class="alert-banner" id="alert-banner"><span>ⓘ 새 버전이 있어요</span><button id="dismiss-alert" aria-label="업데이트 안내 닫기">×</button></div><button class="soft" id="restore-alert" hidden>안내 다시 보기</button></div></div>
+  <div class="name">알림 배너<small>Alert Banner</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="mini-app">
+    <div class="mini-app-content" id="nav-content" aria-live="polite">홈 화면</div>
+    <nav class="bottom-nav" aria-label="예시 앱 내비게이션">
+      <button aria-current="page" data-screen="홈"><span aria-hidden="true">⌂</span>홈</button>
+      <button data-screen="검색"><span aria-hidden="true">⌕</span>검색</button>
+      <button data-screen="내 정보"><span aria-hidden="true">👤</span>내 정보</button>
+    </nav>
+  </div></div>
+  <div class="name">하단 내비게이션<small>Bottom Navigation</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="mini-app drawer-preview"><button class="soft" id="open-drawer" aria-haspopup="dialog" aria-controls="side-drawer"><span aria-hidden="true">☰</span> 메뉴</button><span class="status" id="drawer-status">메뉴를 열어보세요</span></div></div>
+  <div class="name">내비게이션 드로어<small>Navigation Drawer</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center">
+    <div class="mini-panel" id="page-content" aria-live="polite">1페이지 내용</div>
+    <nav class="row pagination" aria-label="예시 페이지 선택">
+      <button class="soft" aria-current="page">1</button><button class="soft">2</button><button class="soft">3</button>
+    </nav>
+  </div></div>
+  <div class="name">페이지네이션<small>Pagination</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center">
+    <nav class="breadcrumbs" aria-label="예시 현재 위치"><button data-level="0">홈</button><span aria-hidden="true">›</span><button data-level="1">사진</button><span aria-hidden="true">›</span><button data-level="2" aria-current="page">여행</button></nav>
+    <div class="mini-panel" id="breadcrumb-content" aria-live="polite">여행 폴더</div>
+    <button class="soft" id="breadcrumb-reset">여행으로 이동</button>
+  </div></div>
+  <div class="name">브레드크럼<small>Breadcrumb</small></div>
+</section>
+<section class="card">
+  <div class="demo"><table class="data-table"><caption class="sr-only">예시 상품 가격표</caption><thead><tr><th scope="col">상품</th><th scope="col" id="price-heading" aria-sort="none"><button id="sort-price">가격 ↕</button></th></tr></thead><tbody id="price-rows"><tr><td>노트</td><td>3,000원</td></tr><tr><td>펜</td><td>1,000원</td></tr><tr><td>가방</td><td>9,000원</td></tr></tbody></table></div>
+  <div class="name">데이터 테이블<small>Data Table</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="tree-demo" aria-label="예시 폴더 구조"><details open><summary>📁 프로젝트</summary><div class="tree-children"><details><summary>📁 이미지</summary><button class="tree-file" id="tree-file">▧ 풍경.svg</button></details><button class="tree-file" id="tree-readme">▤ 안내.txt</button></div></details><span class="status" id="tree-status" role="status">폴더를 펼쳐보세요</span></div></div>
+  <div class="name">트리 뷰<small>Tree View</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><div class="state-illustration" aria-hidden="true">▱</div><span class="sample-copy" id="empty-status" role="status">아직 저장한 항목이 없어요</span><button class="soft" id="empty-add">첫 항목 추가</button></div></div>
+  <div class="name">빈 상태<small>Empty State</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><div class="state-illustration error-icon" aria-hidden="true">!</div><span class="sample-copy" id="error-status" role="status">내용을 불러오지 못했어요</span><button class="soft" id="retry-demo">다시 시도</button></div></div>
+  <div class="name">오류 상태<small>Error State</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center">
+    <progress id="progress" max="100" value="0" aria-label="예시 진행률"></progress>
+    <span class="status" id="progress-status" aria-live="polite">0%</span>
+    <button class="soft" id="advance-progress">진행하기</button>
+  </div></div>
+  <div class="name">진행 표시줄<small>Progress Bar</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact"><ol class="timeline-demo" aria-label="배송 이력"><li><time>09:00</time><span>주문 완료</span></li><li><time>10:30</time><span>배송 시작</span></li><li id="timeline-arrival" hidden><time>14:00</time><span>배송 완료</span></li></ol><button class="soft" id="timeline-toggle">다음 이력 보기</button></div></div>
+  <div class="name">타임라인<small>Timeline</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><div class="skeleton-preview" id="skeleton-preview" aria-busy="true"><div class="skeleton-lines" aria-hidden="true"><i></i><i></i><i></i></div><span class="loaded-content" hidden>🌿 오늘의 추천 글</span></div><button class="soft" id="load-skeleton">내용 불러오기</button><span class="sr-only" id="skeleton-status" role="status">로딩 모양 예시</span></div></div>
+  <div class="name">스켈레톤 로딩<small>Skeleton</small></div>
+</section>
+<section class="card">
+  <div class="demo"><input class="text date-input" type="date" aria-label="날짜 선택"></div>
+  <div class="name">날짜 선택기<small>Date Picker</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact date-range-demo"><label for="stay-start">시작<input class="text" id="stay-start" type="date"></label><label for="stay-end">종료<input class="text" id="stay-end" type="date"></label><span class="status" id="stay-status" role="status">시작일과 종료일을 선택하세요</span></div></div>
+  <div class="name">기간 선택기<small>Date Range Picker</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><label class="upload-zone" for="file-demo"><span aria-hidden="true">↑</span><span>파일 선택</span><input id="file-demo" type="file" aria-describedby="file-status"></label><span class="file-status" id="file-status" role="status">선택만 해요 · 전송하지 않아요</span></div></div>
+  <div class="name">파일 업로드<small>File Upload</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact autocomplete-demo">
+    <input class="text" id="city-input" role="combobox" aria-label="도시 자동완성" aria-autocomplete="list" aria-expanded="false" aria-controls="city-options" autocomplete="off" placeholder="서울, 부산, 제주 검색">
+    <div class="suggestions" id="city-options" role="listbox" aria-label="추천 도시" hidden></div>
+    <span class="status" id="city-status" role="status">도시 이름을 입력해 보세요</span>
+  </div></div><div class="name">자동완성<small>Autocomplete</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="chips row" role="group" aria-label="관심 주제 선택">
+    <button class="chip" aria-pressed="true">디자인</button><button class="chip" aria-pressed="false">개발</button><button class="chip" aria-pressed="false">사진</button>
+  </div></div>
+  <div class="name">필터 칩<small>Filter Chip</small></div>
+</section>
+<section class="card">
+  <div class="demo"><button class="sheet-preview" id="open-sheet" aria-haspopup="dialog" aria-controls="bottom-sheet"><span class="sheet-handle" aria-hidden="true"></span><span aria-hidden="true">↑</span><span id="sheet-selection">아래에서 열기</span></button></div>
+  <div class="name">바텀 시트<small>Bottom Sheet</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center" role="region" aria-roledescription="캐러셀" aria-label="풍경 카드">
+    <div class="slide" id="slide" aria-live="polite"><span aria-hidden="true">🌿</span><span>숲</span></div>
+    <div class="row carousel-controls"><button class="soft" id="previous-slide" aria-label="이전 슬라이드">‹</button><span id="slide-count">1 / 3</span><button class="soft" id="next-slide" aria-label="다음 슬라이드">›</button></div>
+  </div></div>
+  <div class="name">캐러셀<small>Carousel</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact disclosure-demo">
+    <button class="soft" id="multi-trigger" aria-expanded="false" aria-controls="multi-options">관심 분야 선택 ▾</button>
+    <div class="multi-options" id="multi-options" hidden><label><input type="checkbox" value="여행">여행</label><label><input type="checkbox" value="음악">음악</label></div>
+    <span class="selection-summary" id="multi-summary" role="status">선택 없음</span>
+  </div></div><div class="name">다중 선택<small>Multi-select</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack compact disclosure-demo">
+    <button class="soft" id="popover-trigger" aria-expanded="false" aria-controls="popover-content">글자 설정</button>
+    <div class="popover-box" id="popover-content" hidden><span>글자 크기</span><div class="row"><button class="soft" id="font-smaller" aria-label="미리보기 글자 줄이기">A−</button><button class="soft" id="font-larger" aria-label="미리보기 글자 키우기">A+</button></div></div>
+    <span class="sample-copy" id="font-preview">안녕하세요</span>
+  </div></div><div class="name">팝오버<small>Popover</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center">
+    <div class="segmented" role="group" aria-label="요금 결제 주기"><button aria-pressed="true" data-price="월 9,000원">월간</button><button aria-pressed="false" data-price="연 90,000원">연간</button></div>
+    <div class="mini-panel" id="billing-price" aria-live="polite">월 9,000원</div>
+  </div></div>
+  <div class="name">세그먼트 컨트롤<small>Segmented Control</small></div>
+</section>
+<section class="card">
+<div class="demo">
+<div class="center" style="width:100%">
+<output id="range-value" for="range">50</output>
+<input id="range" aria-label="값 조절" type="range" min="0" max="100" value="50">
+</div>
+</div>
+<div class="name">슬라이더<small>Slider</small>
+</div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><output class="price-range-output" id="price-range-output" for="price-min price-max">20–80만원</output><div class="dual-range"><div class="dual-track"><div id="price-range-fill"></div></div><input id="price-min" type="range" min="0" max="100" value="20" step="5" aria-label="최소 가격" aria-valuetext="20만원"><input id="price-max" type="range" min="0" max="100" value="80" step="5" aria-label="최대 가격" aria-valuetext="80만원"></div></div></div>
+  <div class="name">범위 슬라이더<small>Range Slider</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center">
+    <fieldset class="rating"><legend class="sr-only">별점 선택</legend>
+      <label><input type="radio" name="rating" value="1"><span aria-hidden="true">★</span><span class="sr-only">1점</span></label>
+      <label><input type="radio" name="rating" value="2"><span aria-hidden="true">★</span><span class="sr-only">2점</span></label>
+      <label><input type="radio" name="rating" value="3"><span aria-hidden="true">★</span><span class="sr-only">3점</span></label>
+      <label><input type="radio" name="rating" value="4"><span aria-hidden="true">★</span><span class="sr-only">4점</span></label>
+      <label><input type="radio" name="rating" value="5"><span aria-hidden="true">★</span><span class="sr-only">5점</span></label>
+    </fieldset>
+    <span class="status" id="rating-status" aria-live="polite">별을 눌러보세요</span>
+  </div></div>
+  <div class="name">별점<small>Rating</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><div class="format-toolbar" role="toolbar" aria-label="미리보기 서식"><button data-format="bold" aria-label="굵게" aria-pressed="false"><b>B</b></button><button data-format="italic" aria-label="기울임" aria-pressed="false" tabindex="-1"><i>I</i></button><button data-format="underline" aria-label="밑줄" aria-pressed="false" tabindex="-1"><u>U</u></button></div><div class="mini-panel" id="format-preview">오늘의 기록</div></div></div>
+  <div class="name">툴바<small>Toolbar</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stepper row">
+    <button class="soft" id="decrease" aria-label="수량 줄이기" disabled>−</button>
+    <output id="quantity" aria-live="polite" aria-label="수량">1</output>
+    <button class="soft" id="increase" aria-label="수량 늘리기">+</button>
+  </div></div>
+  <div class="name">스테퍼(수량 조절)<small>Stepper</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><input class="text otp-input" id="otp-demo" type="text" inputmode="numeric" autocomplete="one-time-code" placeholder="000000" aria-label="예시 인증번호 6자리" aria-describedby="otp-status"><span class="status" id="otp-status" role="status">숫자 6자리를 입력해 보세요</span></div></div>
+  <div class="name">일회용 인증번호 입력<small>OTP Input</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><ol class="steps" aria-label="예시 가입 단계"><li aria-current="step"><b>1</b>정보</li><li><b>2</b>약관</li><li><b>3</b>완료</li></ol><div class="row"><button class="soft" id="step-back" disabled>이전</button><button class="soft" id="step-next">다음</button></div></div></div>
+  <div class="name">단계 표시기<small>Step Indicator</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="mini-app fab-canvas"><span id="note-count" role="status">메모 0개</span><button class="fab" id="add-note" aria-label="예시 메모 추가">+</button></div></div>
+  <div class="name">플로팅 액션 버튼<small>Floating Action Button</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="mini-app speed-demo"><span class="status" id="speed-status" role="status">빠른 작업</span><div class="speed-actions" id="speed-actions" role="group" aria-label="빠른 작업 선택" hidden><button class="soft" data-speed-action="메모" aria-label="메모 작성">✎</button><button class="soft" data-speed-action="사진" aria-label="사진 추가">▧</button></div><button class="fab" id="speed-trigger" aria-label="빠른 작업 펼치기" aria-expanded="false" aria-controls="speed-actions">+</button></div></div>
+  <div class="name">스피드 다이얼<small>Speed Dial</small></div>
+</section>
+<section class="card">
+  <div class="demo"><button class="lightbox-thumb" id="open-lightbox" aria-label="풍경 이미지 확대" aria-haspopup="dialog" aria-controls="image-lightbox"><svg viewBox="0 0 240 140" aria-hidden="true"><use href="#landscape-art"></use></svg><span>확대하기 ⤢</span></button></div>
+  <div class="name">라이트박스<small>Lightbox</small></div>
+</section>
+<section class="card">
+  <div class="demo"><input class="text" type="time" id="time-demo" value="09:30" aria-label="시간 선택"></div>
+  <div class="name">시간 선택기<small>Time Picker</small></div>
+</section>
+<section class="card">
+  <div class="demo"><div class="stack center"><input class="color-picker" id="color-demo" type="color" value="#23755f" aria-label="색상 고르기"><span class="status" id="color-value">#23755f</span></div></div>
+  <div class="name">색상 선택기<small>Color Picker</small></div>
+</section>
+</div>
+</main>
+<dialog id="modal" aria-labelledby="modal-title">
+<p id="modal-title">모달 창이에요.</p>
+<form method="dialog">
+<button class="primary" autofocus>닫기</button>
+</form>
+</dialog>
+<dialog class="bottom-sheet" id="bottom-sheet" aria-labelledby="sheet-title">
+  <span class="sheet-handle" aria-hidden="true"></span>
+  <h2 id="sheet-title">정렬 방식</h2>
+  <form method="dialog" class="stack"><button class="soft" value="최신순">최신순</button><button class="soft" value="인기순">인기순</button><button class="text-button" value="">닫기</button></form>
+</dialog>
+<dialog class="side-drawer" id="side-drawer" aria-labelledby="drawer-title">
+  <h2 id="drawer-title">메뉴</h2>
+  <form method="dialog" class="stack"><button class="soft" value="홈">홈</button><button class="soft" value="저장한 글">저장한 글</button><button class="soft" value="설정">설정</button><button class="text-button" value="">닫기</button></form>
+</dialog>
+<svg class="svg-library" aria-hidden="true"><defs><symbol id="landscape-art" viewBox="0 0 240 140"><rect width="240" height="140" fill="#e0eee5"/><circle cx="179" cy="35" r="18" fill="#efd28b"/><path d="M0 120 75 38 145 140H0Z" fill="#8bb6a1"/><path d="M65 140 155 64 240 118V140Z" fill="#41816a"/><path d="M0 120Q70 95 130 128T240 110V140H0Z" fill="#27614e"/></symbol><symbol id="sea-art" viewBox="0 0 240 140"><rect width="240" height="140" fill="#d8eaf5"/><circle cx="60" cy="30" r="17" fill="#fff0bb"/><path d="M0 78Q60 48 120 78T240 78V140H0Z" fill="#77b3cf"/><path d="M0 110Q60 80 120 110T240 110V140H0Z" fill="#357d9b"/></symbol><symbol id="sunset-art" viewBox="0 0 240 140"><rect width="240" height="140" fill="#f5d5bf"/><circle cx="120" cy="65" r="30" fill="#df9b61"/><path d="M0 110 80 70 150 115 240 65V140H0Z" fill="#926d72"/></symbol></defs></svg>
+<dialog id="image-lightbox" class="image-lightbox" aria-labelledby="lightbox-title"><h2 id="lightbox-title">초록 산의 풍경</h2><svg viewBox="0 0 240 140" role="img" aria-label="초록 산 위로 해가 떠 있는 일러스트"><use href="#landscape-art"></use></svg><form method="dialog"><button class="soft">닫기</button></form></dialog>
+<script src="./app.js" defer>
+</script>
+<script src="./examples.js" defer></script>
+</body>
+</html>

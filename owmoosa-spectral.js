@@ -53,7 +53,7 @@ void main(){
    color=mix(vec3(.29,.43,.48),vec3(.88,.95,.96),light);
   }else{
    // Uneven absorption fronts, with subdued light at thin smoke edges.
-   a=min(.88,.22+density*.84)*peripheral*local;
+   a=(.045+density*.29)*peripheral*local;
    float rim=filament*.38*(1.-density);
    color=vec3(.012,.009,.024)+vec3(.32,.25,.46)*rim;
   }
@@ -67,6 +67,88 @@ void main(){
   float dust=(1.-smoothstep(.015,.11,length(f)))*step(.983,h);
   float a=dust*.28*front*peripheral*envelope*(.5+.5*sin(t*.8+h*91.));
   sum+=vec3(.69,.83,.86)*a*(1.-alpha);alpha+=a*(1.-alpha);
+ }
+
+ if(mode>.5){
+  // Six staggered roots enter from all four edges; local coordinates rotate each path.
+  // Width is local to each newly exposed segment, never a scale of a full image.
+  for(int tear=0;tear<6;tear++){
+   float k=float(tear),sgn=mod(k,2.)<.5?1.:-1.;
+   vec2 localUV=uv;
+   if(tear==1 || tear==5)localUV=vec2(1.-uv.x,1.-uv.y);
+   if(tear==2)localUV=vec2(uv.y,1.-uv.x);
+   if(tear==3)localUV=vec2(1.-uv.y,uv.x);
+   float crossScale=(tear==2 || tear==3)?1.:aspect;
+   float y=localUV.y;
+   float birth=.12+k*.29+hash(vec3(k,8.,2.))*.5;
+   float travel=3.5+hash(vec3(k,5.,3.))*1.1;
+   float extent=.48+hash(vec3(k,4.,8.))*.28;
+   float head=clamp((t-birth)/travel,0.,extent);
+   float growth=smoothstep(.0,.045,head-y)*(1.-smoothstep(extent-.05,extent,y));
+   float base=(tear<4?.12:.69)+hash(vec3(k,1.,7.))*.19;
+   float jag=noise(vec3(y*29.,k*7.,seed*.02))-.5;
+   float bend=sin(y*12.+seed+k)*.017+jag*.019;
+   float center=base+sgn*(sin(y*5.+k)*.025+bend);
+   float dx=(localUV.x-center)*crossScale;
+   float grain=noise(vec3(uv*vec2(340.,260.),k+seed));
+   float thick=(.003+.009*pow(max(0.,sin(y*17.+seed)),2.)+.003*grain)*growth;
+   float d=abs(dx);
+   float smoke=fbm(vec3(dx*22.+sin(y*9.-t*.6),y*9.-t*.21,k+seed*.03));
+   float halo=exp(-d*23.)*smoothstep(.3,.73,smoke)*growth;
+   float fogA=halo*.44*envelope;
+   vec3 fog=mix(vec3(.055,.04,.095),vec3(.31,.24,.40),smoke);
+   sum=sum*(1.-fogA)+fog*fogA;alpha=alpha+(1.-alpha)*fogA;
+   float rim=exp(-abs(d-thick)*900.)*growth;
+   float bloom=exp(-abs(d-thick)*95.)*growth;
+   float edgeLight=(.38+.62*noise(vec3(y*38.,k,t*.32)));
+   vec3 radiance=(vec3(.63,.53,.77)*rim*.85+vec3(.25,.13,.42)*bloom*.22)*edgeLight;
+   float lightA=clamp((rim*.8+bloom*.13)*envelope,0.,.9);
+   sum=sum*(1.-lightA)+radiance*envelope;alpha=alpha+(1.-alpha)*lightA;
+   float core=(1.-smoothstep(thick*.68,thick+.0012,d))*growth*envelope;
+   sum=mix(sum,vec3(.001,.0005,.003),core*.96);alpha=alpha+(1.-alpha)*core*.96;
+   // Junctions inherit the arrival time of their parent. Child tips propagate separately.
+   for(int branch=0;branch<6;branch++){
+    float j=float(branch),junction=.08+j*.072+hash(vec3(j,k,4.))*.023;
+    float age=t-birth-junction*travel-.12;
+    float length=.07+hash(vec3(j,k,5.))*.09;
+    float reach=clamp(age/2.,0.,length);
+    float by=y-junction;
+    float direction=mod(j,2.)<.5?-1.:1.;
+    float slope=direction*(.6+hash(vec3(j,k,6.))*.7);
+    float bx=base+sgn*(sin(junction*5.+k)*.025+sin(junction*12.+seed+k)*.017+(noise(vec3(junction*29.,k*7.,seed*.02))-.5)*.019);
+    float curve=bx+slope*by+sin(by*90.+j)*by*.10;
+    float bd=abs((localUV.x-curve)*crossScale);
+    float mask=step(0.,by)*(1.-smoothstep(max(0.,reach-.018),reach+.001,by))*step(.002,reach);
+    float bw=.0024*(1.-clamp(by/length,0.,1.));
+    float br=exp(-abs(bd-bw)*1000.)*mask*envelope;
+    float bc=(1.-smoothstep(bw*.5,bw+.0008,bd))*mask*envelope;
+    sum+=vec3(.40,.29,.55)*br*.7;alpha=alpha+(1.-alpha)*br*.7;
+    sum=mix(sum,vec3(.002,.001,.004),bc*.9);alpha=alpha+(1.-alpha)*bc*.9;
+    // One finer fork grows from each branch after its own tip reaches the split.
+    float split=length*.43,fy=by-split;
+    float forkReach=clamp((age-split*2.-.16)*.4,0.,length*.65);
+    float fx=bx+slope*split+sin(split*90.+j)*split*.10-slope*fy*.75+sin(fy*100.+k)*fy*.07;
+    float fd=abs((localUV.x-fx)*crossScale);
+    float fm=step(0.,fy)*(1.-smoothstep(max(0.,forkReach-.012),forkReach+.001,fy))*step(.002,forkReach);
+    float fl=exp(-fd*1200.)*fm*envelope*.48;
+    sum+=vec3(.40,.30,.55)*fl;alpha=alpha+(1.-alpha)*fl;
+   }
+   // Dust accelerates and curves into the tear, disappearing on contact.
+   if(still<.5)for(int mote=0;mote<8;mote++){
+    float j=float(mote),h=hash(vec3(j,k,2.));
+    float age=fract(max(0.,t-1.-h*3.)/(2.4+h*2.));
+    float active=step(1.+h*3.,t);
+    float my=.04+hash(vec3(j,k,7.))*(extent-.08);
+    my+=sin(age*3.+h*6.)*.045*(1.-age);
+    float targetX=base+sgn*(sin(my*5.+k)*.025+sin(my*12.+seed+k)*.017+(noise(vec3(my*29.,k*7.,seed*.02))-.5)*.019);
+    float mx=targetX+(hash(vec3(j,k,9.))-.5)*.30*(1.-age*age);
+    float opened=smoothstep(my,my+.08,head);
+    vec2 delta=(localUV-vec2(mx,my))*vec2(crossScale,(tear==2 || tear==3)?aspect:1.);
+    float radius=.0008+h*.0015;
+    float dotA=exp(-dot(delta,delta)/(radius*radius))*sin(age*3.14159)*active*opened*envelope*.7;
+    sum+=vec3(.64,.59,.72)*dotA;alpha=alpha+(1.-alpha)*dotA;
+   }
+  }
  }
  gl_FragColor=vec4(sum/max(alpha,.0001),alpha);
 }`;

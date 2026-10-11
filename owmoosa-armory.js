@@ -87,7 +87,7 @@
     card.addEventListener('click',()=>{
       if(suppressClick)return;
       const delta=wrap(i-mod(Math.round(target)));
-      if(delta)go(target+delta);else {stage.focus({preventScroll:true});if(['frost','flame','lightning','tempest','venom','soul','shadow'].includes(weapon.id)){unlockAudio();triggerElement(weapon.id);}}
+      if(delta)go(target+delta);else {stage.focus({preventScroll:true});if(['frost','flame','lightning','tempest','venom','soul','shadow','gravity','magnet','resonance'].includes(weapon.id)){unlockAudio();triggerElement(weapon.id);}}
     });
     const dot=document.createElement('button');dot.type='button';dot.setAttribute('aria-label',weapon.name+' 보기');
     dot.addEventListener('click',()=>go(Math.round(target)+wrap(i-mod(Math.round(target)))));
@@ -137,7 +137,7 @@
     document.dispatchEvent(new Event('armory:clear-effect'));
     if(id==='frost'){triggerFrost();return;}
     if(id==='tempest'){triggerTempest();return;}
-    if(['venom','soul','shadow'].includes(id)){document.dispatchEvent(new Event('armory:'+id));return;}
+    if(['venom','soul','shadow','gravity','magnet','resonance'].includes(id)){document.dispatchEvent(new Event('armory:'+id));return;}
     document.dispatchEvent(new Event('armory:'+id));
     if(!audio||muted)return;
     const now=audio.currentTime,source=audio.createBufferSource(),filter=audio.createBiquadFilter(),gain=audio.createGain();
@@ -304,7 +304,7 @@
     unlockAudio();equipped=weapons[selected].id;
     try{localStorage.setItem('armory-equipped',equipped)}catch{}
     information(selected);chime();
-    if(['frost','flame','lightning','tempest','venom','soul','shadow'].includes(equipped))triggerElement(equipped);
+    if(['frost','flame','lightning','tempest','venom','soul','shadow','gravity','magnet','resonance'].includes(equipped))triggerElement(equipped);
   });
   document.addEventListener('visibilitychange',()=>{
     if(document.hidden){finishDrag(true);cancelAnimationFrame(raf);raf=0;lastTime=0;if(audio)audio.suspend().catch(()=>{});}
